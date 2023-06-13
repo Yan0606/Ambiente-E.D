@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta property="og:site_name" content="" /> <!-- website name -->
+    <meta property="og:site" content="" /> <!-- website link -->
+    <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>Lista Duplamente Encadeada</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Favicon  -->
+    <link rel="icon" href="images/logo2.png">
+</head>
+
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+        <div class="container">
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Name</a> -->
+
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="index.html"><img src="images/logo1.png" alt="alternative"></a>
+
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html#header">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html#intro">Introdução</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html#features">Estrutura de Dados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html#details">Manual de Instalação</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Assuntos</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item page-scroll" href="tad.html">TAD</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="lista.html">Lista simples </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="listaDupla.html">Lista Dupla</a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header class="ex-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <h1>Listas Duplamente Encadeadas</h1>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+
+    <!-- Basic -->
+    <div class="ex-basic-1 pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <div class="text-box mt-5 mb-5">
+                        <p class="p-large">Uma lista duplamente encadeada, também conhecida como lista duplamente ligada, é uma estrutura de dados em que cada elemento (nó) contém um ponteiro para o próximo nó e um ponteiro para o nó anterior. Dessa forma, é possível percorrer a lista tanto no sentido da frente para trás quanto de trás para frente.</p>
+                    </div> <!-- end of text-box -->
+
+                    <h2 class="mb-3">Exemplo</h2>
+
+                    <p>Aqui está um exemplo de implementação de uma lista duplamente encadeada em C#:</p>
+
+                    <div class="row"></div>
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="images/cod6.png" alt="alternative">
+                    </div>
+
+                    <p class="mb-5">Nesse exemplo, temos uma classe que chamamos do No. A classe No representa um nó da lista e possui três membros: Data (para armazenar o valor), Prox (ponteiro para o próximo nó) e Pont (ponteiro para o nó anterior).</p>
+
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="images/cod7.png" alt="alternative">
+                    </div>
+
+                   
+
+                    <p class="mb-5">Criamos uma classe que chama ListaDupla, é responsável por gerenciar a lista. Ela possui um ponteiro para o início da lista e um ponteiro para o final da lista. O método Add adiciona um novo elemento no final da lista, atualizando corretamente os ponteiros.
+                        </p>
+
+                        <div class="col-lg-7">
+                            <img class="img-fluid" src="images/cod8.png" alt="alternative">
+                        </div>
+                        <p class="mb-2">Os métodos MostrarAvancar e MostrarRecuar percorrem a lista, imprimindo os elementos na ordem direta e reversa, respectivamente.
+                        </p>
+                        
+
+                        <div class="col-lg-7">
+                            <img class="img-fluid" src="images/cod9.png" alt="alternative">
+                        </div>
+                        <p class="mb-5">No método Main, criamos uma instância da ListaDupla, adicionamos alguns elementos à lista (1, 2, 3 e 4) e em seguida imprimimos os elementos tanto na ordem direta quanto na ordem reversa. A saída será: 
+                        </p>
+
+                        <div class="col-lg-8">
+                            <img class="img-fluid" src="images/cod10.png" alt="alternative">
+                        </div>
+                       
+      
+
+                </div>
+
+
+
+
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-col first">
+                        <h6>Desenvolvimento</h6>
+                        <p class="p-small">Desenvolvido por Yan Andrade e Breno Bacelar, estudantes de Análise e
+                            Desenvolvimento de Sistemas da Fatec de Presidente Prudente.</p>
+                    </div> <!-- end of footer-col -->
+                    <div class="footer-col second">
+                        <h6>Auxilio e Direção </h6>
+                        <p class="p-small">Professor: Bruno Santos De Lima</p>
+
+
+                    </div> <!-- end of footer-col -->
+                    <div class="footer-col third">
+                        <span class="fa-stack">
+                            <a href="https://www.facebook.com/FatecPrudente">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://twitter.com/FatecPrudente">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+
+                        <span class="fa-stack">
+                            <a href="https://www.instagram.com/fatecprudente/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <strong>www.fatecsp.br</strong></a></p>
+                    </div> <!-- end of footer-col -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © FatecPrudente</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright -->
+    <!-- end of copyright -->
+
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+
+</html>
