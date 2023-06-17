@@ -1,4 +1,4 @@
-/* Magnific Popup CSS */
+
 .mfp-bg {
   top: 0;
   left: 0;
@@ -299,7 +299,8 @@ img.mfp-img {
 
 @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
   /**
-       * Remove all paddings around the image on small screen
+       remove todos os paddings das imagens 
+
        */
   .mfp-img-mobile .mfp-image-holder {
     padding-left: 0;

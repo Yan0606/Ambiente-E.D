@@ -1,38 +1,4 @@
-/* Description: Master CSS file */
 
-/*****************************************
-Table Of Contents:
-- General Styles
-- Navigation
-- Header
-- Customers
-- Introduction
-- Features
-- Details 1
-- Details Lightbox
-- Details 2
-- Details 3
-- Testimonials
-- Newsletter
-- Footer
-- Copyright
-- Back To Top Button
-- Extra pages
-- Media Queries
-******************************************/
-
-/*****************************************
-Colors:
-- Buttons - orange #ff6c02
-- Headings text - navy blue #1e266d
-- Body text - dark gray #515867
-- Backgrounds - light gray #f9f9f9
-******************************************/
-
-
-/**************************/
-/*     General Styles     */
-/**************************/
 body,
 html {
     width: 100%;
@@ -195,7 +161,7 @@ a:hover {
 .btn-solid-reg:hover {
 	border: 1px solid #ff6c02;
 	background-color: transparent;
-	color: #ff6c02; /* needs to stay here because of the color property of a tag */
+	color: #ff6c02; 
 	text-decoration: none;
 }
 
@@ -216,7 +182,7 @@ a:hover {
 .btn-solid-lg:hover {
 	border: 1px solid #ff6c02;
 	background-color: transparent;
-	color: #ff6c02; /* needs to stay here because of the color property of a tag */
+	color: #ff6c02; 
 	text-decoration: none;
 }
 
@@ -331,7 +297,7 @@ a:hover {
 
 .form-control-input,
 .form-control-select {
-	display: block; /* needed for proper display of the label in Firefox, IE, Edge */
+	display: block; 
 	width: 100%;
 	padding-top: 1.125rem;
 	padding-bottom: 0.125rem;
@@ -343,7 +309,7 @@ a:hover {
 	font-size: 0.875rem;
 	line-height: 1.875rem;
 	transition: all 0.2s;
-	-webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
+	-webkit-appearance: none; 
 }
 
 .form-control-select {
@@ -354,7 +320,7 @@ a:hover {
 }
 
 select {
-    /* you should keep these first rules in place to maintain cross-browser behavior */
+    
     -webkit-appearance: none;
 	-moz-appearance: none;
 	-ms-appearance: none;
@@ -367,9 +333,9 @@ select {
 }
 
 .form-control-textarea {
-	display: block; /* used to eliminate a bottom gap difference between Chrome and IE/FF */
+	display: block; 
 	width: 100%;
-	height: 14rem; /* used instead of html rows to normalize height between Chrome and IE/FF */
+	height: 14rem; 
 	padding-top: 1.5rem;
 	padding-left: 1.5rem;
 	border: 1px solid #cbcbd1;
@@ -385,7 +351,7 @@ select {
 .form-control-select:focus,
 .form-control-textarea:focus {
 	border: 1px solid #a1a1a1;
-	outline: none; /* Removes blue border on focus */
+	outline: none; 
 }
 
 .form-control-input:hover,
@@ -425,8 +391,7 @@ input[type='checkbox'] {
 	color: #ff6c02;
 }
 
-/* Fade-move Animation For Details Lightbox - Magnific Popup */
-/* at start */
+
 .my-mfp-slide-bottom .zoom-anim-dialog {
 	opacity: 0;
 	transition: all 0.2s ease-out;
@@ -435,7 +400,7 @@ input[type='checkbox'] {
 	transform: translateY(-1.25rem) perspective(37.5rem) rotateX(10deg);
 }
 
-/* animate in */
+
 .my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
 	opacity: 1;
 	-webkit-transform: translateY(0) perspective(37.5rem) rotateX(0); 
@@ -443,7 +408,7 @@ input[type='checkbox'] {
 	transform: translateY(0) perspective(37.5rem) rotateX(0); 
 }
 
-/* animate out */
+
 .my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
 	opacity: 0;
 	-webkit-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
@@ -451,25 +416,25 @@ input[type='checkbox'] {
 	transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
 }
 
-/* dark overlay, start state */
+
 .my-mfp-slide-bottom.mfp-bg {
 	opacity: 0;
 	transition: opacity 0.2s ease-out;
 }
 
-/* animate in */
+
 .my-mfp-slide-bottom.mfp-ready.mfp-bg {
 	opacity: 0.8;
 }
-/* animate out */
+
 .my-mfp-slide-bottom.mfp-removing.mfp-bg {
 	opacity: 0;
 }
-/* end of fade-move animation for details lightbox - magnific popup */
+
 
 
 /**********************/
-/*     Navigation     */
+/*     Navegação    */
 /**********************/
 .navbar {
 	border-bottom: 1px solid #e3e8ec;
@@ -499,7 +464,7 @@ input[type='checkbox'] {
 
 .offcanvas-collapse {
 	position: fixed;
-	top: 3.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
+	top: 3.25rem; 
 	bottom: 0;
 	left: 100%;
 	width: 100%;
@@ -540,7 +505,7 @@ input[type='checkbox'] {
 
 /* Dropdown Menu */
 .navbar .dropdown .dropdown-menu {
-	animation: fadeDropdown 0.2s; /* required for the fade animation */
+	animation: fadeDropdown 0.2s; 
 }
 
 @keyframes fadeDropdown {
@@ -582,7 +547,7 @@ input[type='checkbox'] {
 	border: none;
 	background-color: #e7e7e7;
 }
-/* end of dropdown menu */
+/* fim do dropdown menu */
 
 .navbar .nav-item .btn-solid-sm {
 	margin-top: 0.125rem;
@@ -677,7 +642,7 @@ input[type='checkbox'] {
 
 
 /********************/
-/*     Features     */
+/*     Estrutura de dados    */
 /********************/
 .cards-1 {
 	padding-top: 9.5rem;
@@ -749,7 +714,7 @@ input[type='checkbox'] {
 
 
 /*********************/
-/*     Details 1     */
+/*     Manual de Instalação    */
 /*********************/
 .basic-2 {
 	padding-top: 9.25rem;
@@ -775,117 +740,8 @@ input[type='checkbox'] {
 }
 
 
-/****************************/
-/*     Details Lightbox     */
-/****************************/
-.lightbox-basic {
-	position: relative;
-	max-width: 1150px;
-	margin: 2.5rem auto;
-	padding: 3rem 1rem;
-	background-color: #ffffff;
-	text-align: left;
-}
-
-.lightbox-basic .image-container {
-	margin-bottom: 3rem;
-	text-align: center;
-}
-
-.lightbox-basic .image-container img {
-	border-radius: 8px;
-}
-
-.lightbox-basic h3 {
-	margin-bottom: 0.5rem;
-}
-
-.lightbox-basic hr {
-	width: 44px;
-	margin-top: 0.125rem;
-	margin-bottom: 1rem;
-	margin-left: 0;
-	height: 2px;
-	border: none;
-	background-color: #ff6c02;
-}
-
-.lightbox-basic h4 {
-	margin-top: 1.75rem;
-	margin-bottom: 0.625rem;
-}
-
-.lightbox-basic .list-unstyled {
-	margin-bottom: 1.5rem;
-}
-
-.lightbox-basic .list-unstyled .fas {
-	font-size: 0.75rem;
-	line-height: 1.75rem;
-}
-
-.lightbox-basic .list-unstyled .media-body {
-	margin-left: 0.375rem;
-}
-
-.lightbox-basic .list-unstyled {
-	margin-bottom: 1.5rem;
-}
-
-/* Action Button */
-.lightbox-basic .btn-solid-reg.mfp-close {
-	position: relative;
-	width: auto;
-	height: auto;
-	border-color: #ff6c02;
-	background-color: #ff6c02;
-	color: #ffffff;
-	opacity: 1;
-	font-weight: 600;
-	font-family: "Open Sans";
-}
-
-.lightbox-basic .btn-solid-reg.mfp-close:hover {
-	background-color: transparent;
-	color: #ff6c02;
-}
-/* end of action Button */
-
-/* Back Button */
-.lightbox-basic .btn-outline-reg.mfp-close.as-button {
-	position: relative;
-	display: inline-block;
-	width: auto;
-	height: auto;
-	margin-left: 0.375rem;
-	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
-	border: 1px solid #ff6c02;
-	background-color: transparent;
-	color: #ff6c02;
-	opacity: 1;
-	font-family: "Open Sans";
-}
-
-.lightbox-basic .btn-outline-reg.mfp-close.as-button:hover {
-	background-color: #ff6c02;
-	color: #ffffff;
-}
-/* end of back button */
-
-/* Close X Button */
-.lightbox-basic button.mfp-close.x-button {
-	position: absolute;
-	top: -2px;
-	right: -2px;
-	width: 44px;
-	height: 44px;
-	color: #555555;
-}
-/* end of close x button */
-
-
 /*********************/
-/*     Details 2     */
+/*     Detalhes 2     */
 /*********************/
 .basic-3 {
 	padding-top: 5rem;
@@ -911,7 +767,7 @@ input[type='checkbox'] {
 
 
 /*********************/
-/*     Details 3     */
+/*     Detailhes 3     */
 /*********************/
 .basic-4 {
 	padding-top: 5rem;
@@ -934,7 +790,7 @@ input[type='checkbox'] {
 
 
 /************************/
-/*     Testimonials     */
+/*     sequencia    */
 /************************/
 .slider-2 {
 	padding-top: 9.25rem;
@@ -966,7 +822,7 @@ input[type='checkbox'] {
 
 .slider-2 .swiper-button-prev:focus,
 .slider-2 .swiper-button-next:focus {
-	/* even if you can't see it chrome you can see it on mobile device */
+	
 	outline: none;
 }
 
@@ -1014,7 +870,7 @@ input[type='checkbox'] {
 
 
 /**********************/
-/*     Newsletter     */
+/*     Continuação     */
 /**********************/
 .form-1 {
 	padding-top: 9.5rem;
@@ -1202,17 +1058,17 @@ a:hover.back-to-top {
 /*************************/
 /*     Media Queries     */
 /*************************/	
-/* Min-width 768px */
+
 @media (min-width: 768px) {
 
-	/* Header */
+	
 	.header .btn-solid-lg {
 		margin-bottom: 0;
 	}
-	/* end of header */
+	
 
 
-	/* Newsletter */
+	
 	.form-1 .form-group {
 		max-width: 20rem;
 		display: inline-block;
@@ -1231,19 +1087,19 @@ a:hover.back-to-top {
 		border-top-left-radius: 0;
 		border-bottom-left-radius: 0;
 	}
-	/* end of newsletter */
+	
 
 
-	/* Extra Pages */
+	
 	.ex-basic-1 .text-box {
 		padding: 1.75rem 2rem 0.875rem 2rem;
 	}
-	/* end of extra pages */
+	
 }
-/* end of min-width 768px */
 
 
-/* Min-width 992px */
+
+
 @media (min-width: 992px) {
 	
 	/* General Styles */
@@ -1258,10 +1114,10 @@ a:hover.back-to-top {
 		margin-right: auto;
 		margin-left: auto;
 	}
-	/* end of general styles */
+	
 
 
-	/* Navigation */
+	
 	.navbar {
 		padding-top: 1.75rem;
 		background-color: transparent;
@@ -1317,10 +1173,10 @@ a:hover.back-to-top {
 		margin-top: 0;
 		margin-left: 1rem;
 	}
-	/* end of navigation */
+	
 
 
-	/* Header */
+	
 	.header {
 		padding-top: 10rem;
 		padding-bottom: 7rem;
@@ -1330,17 +1186,17 @@ a:hover.back-to-top {
 	.header .text-container {
 		margin-top: 3.5rem;
 	}
-	/* end of header */
+	
 
 
-	/* Customers */
+	
 	.slider-1 {
 		padding-top: 5rem;
 	}
-	/* end of customers */
+	
 
 
-	/* Introduction */
+	
 	.basic-1 img {
 		margin-bottom: 0;
 	}
@@ -1348,10 +1204,9 @@ a:hover.back-to-top {
 	.basic-1 .text-container {
 		margin-top: 3rem;
 	}
-	/* end of introduction */
+	
 
-
-	/* Features */
+	
 	.cards-1 .card {
 		display: inline-block;
 		width: 290px;
@@ -1362,10 +1217,10 @@ a:hover.back-to-top {
 		margin-right: 1.5rem;
 		margin-left: 1.5rem;
 	}
-	/* end of features */
+	
 
 
-	/* Details 1 */
+	
 	.basic-2 .image-container {
 		margin-bottom: 0;
 	}
@@ -1377,10 +1232,10 @@ a:hover.back-to-top {
 	.basic-2 h2 {
 		margin-right: 2rem;
 	}
-	/* end of details 1 */
+	
 
 
-	/* Details Lightbox */
+	
 	.lightbox-basic {
 		padding: 3rem 3rem;
 	}
@@ -1389,17 +1244,16 @@ a:hover.back-to-top {
 		margin-bottom: 0;
 		text-align: left;
 	}
-	/* end of details lightbox */
+	
 
 
-	/* Details 2 */
 	.basic-3 .text-container {
 		margin-bottom: 0;
 	}
-	/* end of details 2 */
 
 
-	/* Details 3 */
+
+
 	.basic-4 .image-container {
 		margin-bottom: 0;
 	}
@@ -1407,10 +1261,10 @@ a:hover.back-to-top {
 	.basic-4 .text-container {
 		margin-top: 3.5rem;
 	}
-	/* end of details 3 */
+	
 
 
-	/* Testimonials */
+	
 	.slider-2 .swiper-container {
 		width: 90%;
 	}
@@ -1444,7 +1298,7 @@ a:hover.back-to-top {
 		margin-right: 1.125rem;
 		margin-bottom: 0;
 	}
-	/* end of testimonials */
+
 
 
 	/* Footer */
@@ -1477,10 +1331,10 @@ a:hover.back-to-top {
 		margin-right: 0;
 		margin-left: 0.375rem;
 	}
-	/* end of footer */
+	/* fim do footer */
 
 
-	/* Extra Pages */
+	
 	.ex-cards-1 .card {
 		display: inline-block;
 		width: 296px;
@@ -1491,23 +1345,23 @@ a:hover.back-to-top {
 		margin-right: 1rem;
 		margin-left: 1rem;
 	}
-	/* end of extra pages */
+	
 }
-/* end of min-width 992px */
 
 
-/* Min-width 1200px */
+
+
 @media (min-width: 1200px) {
 
-	/* General Styles */
+	
 	.h1-large {
 		font-size: 3.25rem;
 		line-height: 4rem;
 	}
-	/* end of general styles */
 
 
-	/* Header */
+
+	
 	.header {
 		overflow-x: hidden;
 		padding-top: 10.75rem;
@@ -1522,17 +1376,17 @@ a:hover.back-to-top {
 		position: absolute;
 		left: 5rem;
 	}
-	/* end of header */
+	
 
 
-	/* Introduction */
+	/* Introdução */
 	.basic-1 .text-container {
 		margin-top: 5rem;
 	}
-	/* end of introduction */
+	 
 
 
-	/* Features */
+	
 	.cards-1 .card {
 		width: 320px;
 	}
@@ -1541,10 +1395,10 @@ a:hover.back-to-top {
 		margin-right: 4.375rem;
 		margin-left: 4.375rem;
 	}
-	/* end of features */
+	
 
 
-	/* Details 1 */
+	
 	.basic-2 .intro h2 {
 		margin-right: 10rem;
 	}
@@ -1552,17 +1406,17 @@ a:hover.back-to-top {
 	.basic-2 .text-container {
 		margin-top: 6.5rem;
 	}
-	/* end of details 1 */
+	
 
 
-	/* Details Lightbox */
+	
 	.lightbox-basic .image-container {
 		margin-right: 1.5rem;
 	}
-	/* end of details lightbox */
+	
 
 
-	/* Details 2 */
+	
 	.basic-3 .image-container {
 		text-align: right;
 	}
@@ -1570,17 +1424,17 @@ a:hover.back-to-top {
 	.basic-3 .text-container {
 		margin-top: 4rem;
 	}
-	/* end of details 2 */
+	
 
 
-	/* Details 3 */
+	
 	.basic-4 .text-container {
 		margin-top: 6rem;
 	}
-	/* end of details 3 */
+	
 
 
-	/* Testimonials */
+	
 	.slider-2 .swiper-container {
 		width: 92%;
 	}
@@ -1588,10 +1442,10 @@ a:hover.back-to-top {
 	.slider-2 .card-body {
 		padding: 3rem 2.625rem 3.125rem 2.625rem;
 	}
-	/* end of testimonials */
+	
 
 
-	/* Footer */
+	
 	.footer .footer-col.first {
 		width: 352px;
 		margin-right: 6rem;
@@ -1604,10 +1458,10 @@ a:hover.back-to-top {
 	.footer .footer-col.third {
 		text-align: right;
 	}
-	/* end of footer */
+	
 
 
-	/* Extra Pages */
+	
 	.ex-cards-1 .card {
 		width: 336px;
 	}
@@ -1616,6 +1470,5 @@ a:hover.back-to-top {
 		margin-right: 2.875rem;
 		margin-left: 2.875rem;
 	}
-	/* end of extra pages */
+	
 }
-/* end of min-width 1200px */
