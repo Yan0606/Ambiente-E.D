@@ -110,12 +110,54 @@
 
                     <p>Aqui está um exemplo de implementação de uma lista duplamente encadeada em C#:</p>
 
+                    <div class="tag_code">
+                        <p><code>public class No<br>
+                        {<br>
+                        &nbsp;&nbsp;&nbsp;public int Data;<br>
+                        &nbsp;&nbsp;&nbsp;public No Prox;<br>
+                        &nbsp;&nbsp;&nbsp;public No Pont;<br>
+                        <br>
+                        &nbsp;&nbsp;&nbsp; public No(int data)<br>
+                        &nbsp;&nbsp;&nbsp;{<br>
+                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Data = data;<br>
+                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Prox = null;<br>
+                            &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;Pont = null;<br>
+                            &nbsp;&nbsp;&nbsp;  }<br>
+                        }<br></code></p>
+                    </div>
+
                     <div class="row"></div>
                     <div class="col-lg-7">
-                        <img class="img-fluid" src="images/cod6.png" alt="alternative">
+                        <img class="img-fluid" src="images/cod6.png" alt="alternative">  <!--ANIMAÇÃO-->
                     </div>
 
                     <p class="mb-5">Nesse exemplo, temos uma classe que chamamos do No. A classe No representa um nó da lista e possui três membros: Data (para armazenar o valor), Prox (ponteiro para o próximo nó) e Pont (ponteiro para o nó anterior).</p>
+
+
+                    <div class="tag_code">
+                        <p><code>public class ListaDupla<br>
+                        {<br>
+                        &nbsp;&nbsp;&nbsp;private No inicio;<br>
+                        &nbsp;&nbsp;&nbsp;private No fim;<br>
+                        &nbsp;&nbsp;&nbsp;public void Add(int data);<br>
+                        {<br>
+                        &nbsp;&nbsp;&nbsp; No newNo = new No(data;)<br>
+                        &nbsp;&nbsp;&nbsp;if (inicio == null)<br>
+                            &nbsp;&nbsp;&nbsp; {<br>
+                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;inicio = newNo;<br>
+                            &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;fim = newNo;<br>
+                            &nbsp;&nbsp;&nbsp;  }<br>
+                            &nbsp;&nbsp;&nbsp; else<br>
+                            &nbsp;&nbsp;&nbsp; }<br>
+                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; fim.Prox = newNo;<br>
+                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; newNo.Pont = fim;<br>
+                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; fim = newNo;<br>
+                            &nbsp;&nbsp;&nbsp; }<br>
+                            
+
+                        }<br></code></p>
+                    </div>
+
 
                     <div class="col-lg-7">
                         <img class="img-fluid" src="images/cod7.png" alt="alternative">
@@ -193,6 +235,14 @@
                                 <i class="fab fa-instagram fa-stack-1x"></i>
                             </a>
                         </span>
+
+                        <span class="fa-stack">
+                            <a href="https://github.com/Yan0606/Ambiente-E.D" target="_blank">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x"></i>
+                            </a>
+                        </span>
+
                         <strong>www.fatecsp.br</strong></a></p>
                     </div> <!-- end of footer-col -->
                 </div> <!-- end of col -->
