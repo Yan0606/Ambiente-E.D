@@ -65,6 +65,9 @@
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="index.html#details">Manual de Instalação</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#quiz">Quiz</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Assuntos</a>
@@ -102,15 +105,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
-                    <div class="text-box mt-5 mb-5">
-                        <p class="p-large">Uma lista duplamente encadeada, também conhecida como lista duplamente ligada, é uma estrutura de dados em que cada elemento (nó) contém um ponteiro para o próximo nó e um ponteiro para o nó anterior. Dessa forma, é possível percorrer a lista tanto no sentido da frente para trás quanto de trás para frente.</p>
+                    <div class="text-box cmb-5">
+                        <p class="p-large">Uma lista duplamente encadeada, também conhecida como lista duplamente
+                            ligada, é uma estrutura de dados em que cada elemento (nó) contém um ponteiro para o próximo
+                            nó e um ponteiro para o nó anterior. Dessa forma, é possível percorrer a lista tanto no
+                            sentido da frente para trás quanto de trás para frente.</p>
                     </div> <!-- end of text-box -->
 
                     <h2 class="mb-3">Exemplo</h2>
 
                     <p>Aqui está um exemplo de implementação de uma lista duplamente encadeada em C#:</p>
 
-                    <div class="tag_code">
+                    <div class="tag_code ">
                         <p><code>public class No<br>
                         {<br>
                         &nbsp;&nbsp;&nbsp;public int Data;<br>
@@ -128,10 +134,12 @@
 
                     <div class="row"></div>
                     <div class="col-lg-7">
-                        <img class="img-fluid" src="images/cod6.png" alt="alternative">  <!--ANIMAÇÃO-->
+                        <img class="img-fluid" src="images/cod6.png" alt="alternative"> <!--ANIMAÇÃO-->
                     </div>
 
-                    <p class="mb-5">Nesse exemplo, temos uma classe que chamamos do No. A classe No representa um nó da lista e possui três membros: Data (para armazenar o valor), Prox (ponteiro para o próximo nó) e Pont (ponteiro para o nó anterior).</p>
+                    <p class="mb-5">Nesse exemplo, temos uma classe que chamamos do No. A classe No representa um nó da
+                        lista e possui três membros: Data (para armazenar o valor), Prox (ponteiro para o próximo nó) e
+                        Pont (ponteiro para o nó anterior).</p>
 
 
                     <div class="tag_code">
@@ -163,29 +171,87 @@
                         <img class="img-fluid" src="images/cod7.png" alt="alternative">
                     </div>
 
-                   
 
-                    <p class="mb-5">Criamos uma classe que chama ListaDupla, é responsável por gerenciar a lista. Ela possui um ponteiro para o início da lista e um ponteiro para o final da lista. O método Add adiciona um novo elemento no final da lista, atualizando corretamente os ponteiros.
-                        </p>
 
-                        <div class="col-lg-7">
-                            <img class="img-fluid" src="images/cod8.png" alt="alternative">
-                        </div>
-                        <p class="mb-2">Os métodos MostrarAvancar e MostrarRecuar percorrem a lista, imprimindo os elementos na ordem direta e reversa, respectivamente.
-                        </p>
-                        
+                    <p class="mb-5">Criamos uma classe que chama ListaDupla, é responsável por gerenciar a lista. Ela
+                        possui um ponteiro para o início da lista e um ponteiro para o final da lista. O método Add
+                        adiciona um novo elemento no final da lista, atualizando corretamente os ponteiros.
+                    </p>
 
-                        <div class="col-lg-7">
-                            <img class="img-fluid" src="images/cod9.png" alt="alternative">
-                        </div>
-                        <p class="mb-5">No método Main, criamos uma instância da ListaDupla, adicionamos alguns elementos à lista (1, 2, 3 e 4) e em seguida imprimimos os elementos tanto na ordem direta quanto na ordem reversa. A saída será: 
-                        </p>
 
-                        <div class="col-lg-8">
-                            <img class="img-fluid" src="images/cod10.png" alt="alternative">
-                        </div>
-                       
-      
+                    <div class="tag_code">
+                        <p><code>public void MostrarAvancar()<br>
+                        {<br>
+                        &nbsp;&nbsp;&nbsp;No current = inicio;<br>
+                        &nbsp;&nbsp;&nbsp;while (current != null)<br>
+                        &nbsp;&nbsp;&nbsp;{<br>
+                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Console.Write(current.Data + " ");<br>
+                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; current = current.Prox;<br>
+                        &nbsp;&nbsp;&nbsp; }<br>
+                            &nbsp;&nbsp;&nbsp;Console.WriteLine();<br>
+                            }<br>
+                            &nbsp;&nbsp;&nbsp;  public void MostrarRecuar()<br>
+                            &nbsp;&nbsp;&nbsp;  {<br>
+                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; No currente = fim;<br>
+                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; while (currente != null)<br>
+                            &nbsp;&nbsp;&nbsp;  {<br>
+                            &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;Console.Write(current.Data + " ");<br>
+                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; current = current.Pont;<br>
+                            &nbsp;&nbsp;&nbsp; }<br>
+                            &nbsp;&nbsp;&nbsp; Console.WriteLine();<br>
+                            
+                            
+
+                        }<br></code></p>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="images/cod8.png" alt="alternative">
+                    </div>
+                    <p class="mb-2">Os métodos MostrarAvancar e MostrarRecuar percorrem a lista, imprimindo os elementos
+                        na ordem direta e reversa, respectivamente.
+                    </p>
+
+                    <div class="tag_code">
+                        <p><code>
+                            public class Program<br>
+                            {<br>
+                                &nbsp;&nbsp;&nbsp; public static void Main(string[] args)<br>
+                                &nbsp;&nbsp;&nbsp;   {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   ListaDupla list = new ListaDupla();<br>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; list.Add(1);<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; list.Add(2);<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; list.Add(3);<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; list.Add(4);<br>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Console.WriteLine("Avançar: ";)<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  list.MostrarAvancar();<br>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; consoleWriteLine("Recuar:");<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; list.MostrarRecuar();<br>
+                                    &nbsp;&nbsp;&nbsp;    }<br>
+                            }<br>
+
+
+
+                            </code></p>
+                    </div>
+
+
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="images/cod9.png" alt="alternative">
+                    </div>
+                    <p class="mb-5">No método Main, criamos uma instância da ListaDupla, adicionamos alguns elementos à
+                        lista (1, 2, 3 e 4) e em seguida imprimimos os elementos tanto na ordem direta quanto na ordem
+                        reversa. A saída será:
+                    </p>
+
+                    <div class="col-lg-8">
+                        <img class="img-fluid" src="images/cod10.png" alt="alternative">
+                    </div>
+
+
 
                 </div>
 
