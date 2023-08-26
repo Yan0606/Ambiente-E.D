@@ -3,5 +3,7 @@
 
 <h4>WebSite explicando Sobre Estrutura de Dados, em conteúdos reladionados <h4>
 
-<h5>Usamos EasyPHP para implementação do Banco de Dados relacional mysql, VScode como editor de código, e para a codificação foi usado php, css, JavaScript e Bootstrap como Framework.</h5>
+<h5>Para o Banco de Dados MySQL, foi usado EasyPHP. O VSCode serviu como editor. <br>
+  Linguagens: PHP, CSS, JavaScript.<br>
+  Bootstrap foi o framework front-end.</h5>
 
