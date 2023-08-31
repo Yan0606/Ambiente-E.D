@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="icon" href="imagem/favicon.png">
+    <link rel="stylesheet" href="css/quiz.css">
+  
+</head>
+<body>
+  
+    <div class="start_btn"><button>INICIAR</button></div>
+
+    
+    <div class="info_box">
+        <div class="info-title"><span>INFORMAÇÕES</span></div>
+        <div class="info-list">
+            <div class="info">1.<span>15 s</span> AQUI</div>
+            <div class="info">2.SLA.</div>
+            <div class="info">3. SLA.</div>
+            <div class="info">4. SLA.</div>
+            <div class="info">5. SLA.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">SAIR</button>
+            <button class="restart">CONTINUAR</button>
+        </div>
+    </div>
+
+<!-- QUIZ PERGUNTAS -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">QUIZ</div>
+            <div class="timer">
+                <div class="time_left_txt">TEMPO</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+             <!-- ADICIONAR PERGUNTAS JS -->
+            </div>
+            <div class="option_list">
+                <!-- ADICIONAR OPÇÕES -->
+            </div>
+        </section>
+
+        <!-- FOOTER QUIZ -->
+        <footer>
+            <div class="total_que">
+                <!-- INSERIR JS -->
+            </div>
+            <button class="next_btn">PROXIMA PERGUNTA</button>
+        </footer>
+    </div>
+
+    <!-- RESULTADO -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">COMPLETO!</div>
+        <div class="score_text">
+            <!-- RESULTADO JS -->
+        </div>
+        <div class="buttons">
+            <button class="restart">REFAZER</button>
+            <button class="quit">SAIR Quiz</button>
+        </div>
+    </div>
+
+    <!-- QUESTÃO JS -->
+    <script src="js/questions.js"></script>
+
+    <!-- CODIGO QUIZ -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
