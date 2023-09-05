@@ -8,7 +8,7 @@
 }
 
 body{
-    background: #697edf;
+    background-image: url('../images/header-background.png');
 }
 
 ::selection{
@@ -82,7 +82,7 @@ body{
 
 .info_box .info-list .info span{
     font-weight: 600;
-    color: #000000;
+    color: #ff0000;
 }
 .info_box .buttons{
     height: 60px;
@@ -137,7 +137,7 @@ body{
 
 .quiz_box header .timer{
     color: #000000;
-    background: #8a76fc;
+    background: #532cff89;
     border: 1px solid #7d59ff;
     height: 45px;
     padding: 0 8px;
@@ -192,7 +192,7 @@ section .option_list{
 }
 
 section .option_list .option{
-    background: #6f6cff;
+    background: #9795f8;
     border: 1px solid #6200ff;
     border-radius: 5px;
     padding: 8px 15px;
@@ -210,7 +210,7 @@ section .option_list .option:last-child{
 }
 
 section .option_list .option:hover{
-    color: #000000;
+    color: #ffffff;
     background: #2c0074;
     border: 1px solid #000000;
 }
@@ -218,13 +218,13 @@ section .option_list .option:hover{
 section .option_list .option.correct{
     color: #ffffff;
     background: #4dbd02;
-    border: 1px solid #000000;
+    border: 1px solid #4dbd02;
 }
 
 section .option_list .option.incorrect{
-    color: #721c24;
-    background: #f8d7da;
-    border: 1px solid #f5c6cb;
+    color: #ffffff;
+    background: #ff0015;
+    border: 1px solid #ff0015;
 }
 
 section .option_list .option.disabled{
@@ -373,11 +373,11 @@ footer button.show{
 }
 
 .buttons button.quit{
-    color: #1aff66;
-    background: #7c5fff;
+    color: #ffffff;
+    background: #613dff;
 }
 
 .buttons button.quit:hover{
     color: #fff;
-    background: #5246ff;
+    background: #12007a;
 }
