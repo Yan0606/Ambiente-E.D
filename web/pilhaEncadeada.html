@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta property="og:site_name" content="" /> <!-- website name -->
+    <meta property="og:site" content="" /> <!-- website link -->
+    <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>Lista Duplamente Encadeada</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Favicon  -->
+    <link rel="icon" href="images/logo2.png">
+</head>
+
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+        <div class="container">
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Name</a> -->
+
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="index.html"><img src="images/logo1.png" alt="alternative"></a>
+
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html#header">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html#intro">Introdução</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html#features">Estrutura de Dados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html#details">Manual de Instalação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#quiz">Quiz</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Assuntos</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item page-scroll" href="tad.html">TAD</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="lista.html">Listas Simples</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="listaDupla.html">Lista Dupla</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="fila.html">Fila FIFO</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="pilhaEncadeada.html">Pilha Encadeada</a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header class="ex-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <h1>Pilha Encadeada</h1>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+
+    <!-- Basic -->
+    <div class="ex-basic-1 pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <div class="text-box cmb-5">
+                        <p class="p-large">Uma pilha encadeada, também conhecida como pilha ligada ou stack, é uma
+                            estrutura de dados linear que segue o princípio do "last in, first out" (LIFO), o que
+                            significa que o último elemento adicionado à pilha é o primeiro a ser removido. Neste tipo
+                            de estrutura, os elementos são organizados em uma sequência encadeada de nós, onde cada nó
+                            contém um valor e uma referência para o próximo nó na pilha.</p>
+                    </div> <!-- end of text-box -->
+
+                    <h2 class="mb-3">Exemplo</h2>
+
+
+
+                    <div class="row">
+
+                        <p>Aqui está um exemplo de implementação de uma pilha encadeada em C#:</p>
+                        Definindo a Classe PilhaEncadeada:
+                        <ul>
+                            <li>A classe PilhaEncadeada é definida para representar a pilha encadeada.</li>
+                            <li>Ela contém uma classe interna chamada No, que representa os nós individuais da pilha.
+                            </li>
+                            <li>Há uma variável privada topo que aponta para o nó no topo da pilha.</li>
+                        </ul>
+                        <div class="col-lg-7">
+                            <div class="tag_code">
+                                <p><code>using System;<br>
+                                    <br>
+                                    class PilhaEncadeada<br>
+                                    {<br>
+                                        &nbsp;&nbsp;&nbsp;   private class No<br>
+                                        &nbsp;&nbsp;&nbsp;  {<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   public int Valor { get; set; }<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public No Proximo { get; set; }<br>
+                                            <br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public No(int valor)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  {<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    Valor = valor;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Proximo = null;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  }<br>
+                                                &nbsp;&nbsp;&nbsp; }<br>
+                                                <br>
+                                                &nbsp;&nbsp;&nbsp;  private No topo;<br>
+                                                <br>
+                                                &nbsp;&nbsp;&nbsp;   public PilhaEncadeada()<br>
+                                                &nbsp;&nbsp;&nbsp; {<br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   topo = null;<br>
+                                                    &nbsp;&nbsp;&nbsp;  }<br></code></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <img class="img-fluid" src="images/Pilha1.png" alt="alternative"> <!--ANIMAÇÃO-->
+                        </div>
+                    </div> <!--div row-->
+                    <h4 class="mb-2">Construtor da Pilha:</h4>
+                    <ul>
+                        <li>O construtor da classe PilhaEncadeada inicializa o topo como nulo, indicando que a pilha
+                            está vazia no início.</li>
+                    </ul>
+                    <h4 class="mb-2"> Método Push:</h4>
+                    <ul>
+                        <li> O método Push é usado para adicionar elementos à pilha.</li>
+                        <li> Ele cria um novo nó com o valor especificado e o torna o novo nó no topo da pilha,
+                            ajustando as referências.</li>
+                    </ul>
+                    <h4 class="mb-2">Método Pop:</h4>
+                    <ul>
+                        <li> O método Pop é usado para remover e retornar o elemento no topo da pilha.
+                        <li> Ele verifica se a pilha está vazia (o topo é nulo) e lança uma exceção se estiver.
+                        <li>Caso contrário, ele obtém o valor do topo, ajusta o topo para apontar para o próximo nó e
+                            retorna o
+                        <li>valor removido.</li>
+                    </ul>
+                    <h4 class="mb-2"> Método Print:</h4>
+                    <ul>
+                        <li> O método Print é usado para exibir os elementos da pilha na ordem em que foram empilhados.
+                        <li> Ele percorre a pilha a partir do topo e imprime os valores dos nós.</li>
+                        </p>
+                    </ul>
+
+                    <div class="tag_code">
+                        <p><code>public void Push(int valor)<br>
+                            {<br>
+                                &nbsp;&nbsp;&nbsp; No novoNo = new No(valor);<br>
+                                &nbsp;&nbsp;&nbsp;  novoNo.Proximo = topo;<br>
+                                &nbsp;&nbsp;&nbsp;topo = novoNo;<br>
+                            }<br>
+                            <br>
+                            public int Pop()<br>
+                            {<br>
+                                &nbsp;&nbsp;&nbsp;  if (topo == null)<br>
+                                &nbsp;&nbsp;&nbsp;  {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    throw new InvalidOperationException("A pilha está vazia.");<br>
+                                    &nbsp;&nbsp;&nbsp; }<br>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;   int valorRemovido = topo.Valor;<br>
+                                    &nbsp;&nbsp;&nbsp;  topo = topo.Proximo;<br>
+                                    &nbsp;&nbsp;&nbsp; return valorRemovido;<br>
+                            }<br>
+                            <br>
+                            public void Print()<br>
+                            {<br>
+                                &nbsp;&nbsp;&nbsp;  No atual = topo;<br>
+                                &nbsp;&nbsp;&nbsp;  Console.Write("Pilha: ");<br>
+                                &nbsp;&nbsp;&nbsp; while (atual != null)<br>
+                                &nbsp;&nbsp;&nbsp; {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    Console.Write(atual.Valor + " ");<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  atual = atual.Proximo;<br>
+                                    &nbsp;&nbsp;&nbsp;  }<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Console.WriteLine();<br>
+                         &nbsp;&nbsp;&nbsp;   }<br>
+                        }<br></code></p>
+                    </div>
+                    <h5 class="mb-1">Classe Program - Método Main:</h5>
+                    <ul>
+                        <li>No método Main, criamos uma instância da classe PilhaEncadeada chamada pilha.</li>
+                    </ul>
+                    <h6 class="mb-1">Empilhando Valores:</h6>
+                    <ul>
+                        <li> Chamamos o método Push quatro vezes para adicionar os valores 1, 2, 3 e 4 à pilha, respectivamente
+                        .</li>
+                    </ul>
+                    <h6 class="mb-2">Impressão da Pilha:</h6>
+                    <ul>
+                        <li>Chamamos o método Print para imprimir o conteúdo da pilha, que será "Pilha: 4 3 2 1", pois os elementos são impressos na ordem em que foram empilhados.</li>
+                    </ul>
+                    <h6 class="mb-2"> Desempilhando um Valor:</h6>
+                    <ul>
+                        <li> Chamamos o método Pop para remover o elemento no topo da pilha (4, no caso) e armazenamos esse valor em valorRemovido.</li>
+                        </p>
+                    </ul>
+                    <h6 class="mb-2"> Imprimindo o Valor Removido:</h6>
+                    <ul>
+                        <li> Imprimimos o valor removido usando Console.WriteLine, que mostrará "Valor removido: 4".</li>
+                        </p>
+                    </ul>
+                    <h6 class="mb-2"> Empilhando o Valor 10:</h6>
+                    <ul>
+                        <li> Chamamos o método Push para adicionar o valor 10 à pilha.</li></p>
+                    </ul>
+                    <h6 class="mb-2"> Impressão Atualizada da Pilha:</h4>
+                    <ul>
+                        <li> Chamamos o método Print novamente para imprimir o conteúdo atualizado da pilha, que será "Pilha: 10 3 2 1".</li></p>
+                    </ul>
+
+                    <div class="tag_code">
+                        <p><code>class Program<br>
+                            {<br>
+                                &nbsp;&nbsp;&nbsp;   static void Main()<br>
+                                &nbsp;&nbsp;&nbsp;  {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    PilhaEncadeada pilha = new PilhaEncadeada();<br>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  pilha.Push(1);<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pilha.Push(2);<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pilha.Push(3);<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pilha.Push(4);<br>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pilha.Print(); // Pilha: 4 3 2 1<br>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  int valorRemovido = pilha.Pop(); // Remove o 4<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("Valor removido: " + valorRemovido);<br>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pilha.Push(10); // Adiciona o 10<br>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pilha.Print(); // Pilha: 10 3 2 1<br>
+                                    &nbsp;&nbsp;&nbsp;   }<br>
+                            }
+                        </code></p>
+                    </div>
+                </div>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-col first">
+                        <h6>Desenvolvimento</h6>
+                        <p class="p-small">Desenvolvido por: <a href="https://github.com/Yan0606" target="_blank">Yan
+                                Andrade</a>, <a href="https://github.com/adryanzx" target="_blank">Adryan Freire</a>,
+                            Diogo Neves e Arthur Marques, estudantes de Análise e Desenvolvimento de Sistemas da Fatec
+                            de Presidente Prudente.</p>
+                    </div> <!-- end of footer-col -->
+                    <div class="footer-col second">
+                        <h6>Auxilio e Direção </h6>
+                        <p class="p-small">Professor: Bruno Santos De Lima</p>
+
+
+                    </div> <!-- end of footer-col -->
+                    <div class="footer-col third">
+                        <span class="fa-stack">
+                            <a href="https://www.facebook.com/FatecPrudente">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://twitter.com/FatecPrudente">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+
+                        <span class="fa-stack">
+                            <a href="https://www.instagram.com/fatecprudente/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+
+                        <span class="fa-stack">
+                            <a href="https://github.com/Yan0606/Ambiente-E.D" target="_blank">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x"></i>
+                            </a>
+                        </span>
+
+                        <a href="www.fatecsp.br"><strong>Fatec</strong></a></p>
+                    </div> <!-- end of footer-col -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © FatecPrudente</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright -->
+    <!-- end of copyright -->
+
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+
+</html>
