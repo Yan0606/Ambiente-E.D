@@ -84,6 +84,11 @@ body{
     font-weight: 600;
     color: #ff0000;
 }
+.info_box .info-list .info2 span{
+    font-weight: 600;
+    color: #4dbd02;
+}
+
 .info_box .buttons{
     height: 60px;
     display: flex;

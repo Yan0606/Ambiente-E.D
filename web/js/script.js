@@ -148,23 +148,23 @@ function showResult(){
     quiz_box.classList.remove("activeQuiz"); 
     result_box.classList.add("activeResult"); 
     const scoreText = result_box.querySelector(".score_text");
-    if (userScore > 3){ 
+    if (userScore > 7){ 
        
         let scoreTag = '<span>OTIMO! 🎉<p>'+ userScore +'</p> DE <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;  
     }
-    else if(userScore > 1){ 
-        let scoreTag = '<span>BOAA! 😎 <p>'+ userScore +'</p> DE <p>'+ questions.length +'</p></span>';
+    else if(userScore < 5){ 
+        let scoreTag = '<span>MELHORE! 😐 <p>'+ userScore +'</p> DE <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
     else{ 
-        let scoreTag = '<span>DESCULPA 😐, ESTÁ MEIO SLA... <p>'+ userScore +'</p> DE <p>'+ questions.length +'</p></span>';
+        let scoreTag = '<span>BOAA 😎, ESTÁ MEIO SLA... <p>'+ userScore +'</p> DE <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
 }
 
 function startTimer(time){
-    counter = setInterval(timer, 1000);
+    counter = setInterval(timer, 10000);
     function timer(){
         timeCount.textContent = time; 
         time--; 
