@@ -69,7 +69,8 @@
                         <a class="nav-link page-scroll" href="#quiz">Quiz</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Assuntos</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Assuntos</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
                             <a class="dropdown-item page-scroll" href="tad.html">TAD</a>
                             <div class="dropdown-divider"></div>
@@ -119,8 +120,11 @@
 
                     <p>A seguir iremos mostrar um exemplo básico de uma implementação de uma lista simplesmente
                         encadeada, na linguagem de programação C# </p>
-                        <div class="tag_code ">
-                            <p><code>public class No<br>
+                    <div class="col-lg-9">
+                        <img class="img-fluid" src="images/Simples1.png" alt="alternative">
+                    </div>
+                    <div class="tag_code ">
+                        <p><code>public class No<br>
                             {<br>
                             &nbsp;&nbsp;&nbsp;public int valor;<br>
                             &nbsp;&nbsp;&nbsp;public No Prox;<br>
@@ -133,20 +137,13 @@
                                 &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;Pont = null;<br>
                                 &nbsp;&nbsp;&nbsp;  }<br>
                             <br></code></p>
-                        </div>
-
-                    <div class="row"></div>
-                    <div class="col-lg-7">
-                        <img class="img-fluid" src="images/cod1.png" alt="alternative">
                     </div>
-
-                    
 
                     <p class="mb-5">Neste exemplo, a classe No representa um nó da lista, com uma propriedade valor
                         para armazenar o valor do nó e uma propriedade noProx para apontar para o próximo nó.</p>
 
-                        <div class="tag_code ">
-                            <p><code>public class lista<br>
+                    <div class="tag_code ">
+                        <p><code>public class lista<br>
                             {<br>
                             &nbsp;&nbsp;&nbsp;public No inicio;<br>
                             &nbsp;&nbsp;&nbsp;public No fim;<br>
@@ -159,18 +156,13 @@
                                 
                                 &nbsp;&nbsp;&nbsp;  }<br>
                             <br></code></p>
-                        </div>
-
-                    <div class="col-lg-7">
-                        <img class="img-fluid" src="images/cod2.png" alt="alternative">
                     </div>
+                    <p class="mb-5">A classe Lista é responsável por gerenciar a lista. Ela possui um campo inicio que
+                        representa a cabeça da lista e um campo fim que representa a calda da lista.
+                    </p>
 
-                   
-
-                    <p class="mb-5">A classe Lista é responsável por gerenciar a lista. Ela possui um campo inicio que representa a cabeça da lista e um campo fim que representa a calda da lista.
-                        </p>
-                        <div class="tag_code ">
-                            <p><code>public void inserirIncicio(int value)<br>
+                    <div class="tag_code ">
+                        <p><code>public void inserirIncicio(int value)<br>
                             {<br>
                             &nbsp;&nbsp;&nbsp;No novoNo = new(value)<br>
                             <br>
@@ -184,23 +176,18 @@
                                 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; novoNo.noProx = this.incio;<br>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.incio = novoNo;<br>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("Insira a posição: " + this.incio.valor);<br>
-                                &nbsp;&nbsp;&nbsp;}<br>
-                            
-                                
-                                
+                                &nbsp;&nbsp;&nbsp;}<br>                          
                             <br></code></p>
-                        </div>
-
-                        <div class="col-lg-7">
-                            <img class="img-fluid" src="images/cod3.png" alt="alternative">
-                        </div>
-                        <p class="mb-2">Vamos inserir um Nó no inicio da lista, primeiro criamos o método inserir inicio, então verificamos se a lista está fazia, se ele estiver fazia o o novo nó sera inserido, dessa forma, ele será tanto a cabeça quanto a calda da lista.
-                        </p>
-                        <p class="mb-5">Mas se a lista não estiver fazia, devemos definir que o proximo do nosso nó sera o atual cabeça da lista "this.inicio".
-                        </p>
-
-                        <div class="tag_code ">
-                            <p><code>public void percurso(){<br>
+                    </div>
+                    <p class="mb-2">Vamos inserir um Nó no inicio da lista, primeiro criamos o método inserir inicio,
+                        então verificamos se a lista está fazia, se ele estiver fazia o o novo nó sera inserido, dessa
+                        forma, ele será tanto a cabeça quanto a calda da lista.
+                    </p>
+                    <p class="mb-5">Mas se a lista não estiver fazia, devemos definir que o proximo do nosso nó sera o
+                        atual cabeça da lista "this.inicio".
+                    </p>
+                    <div class="tag_code ">
+                        <p><code>public void percurso(){<br>
                             <br>
                             &nbsp;&nbsp;&nbsp;No noAux = this.incio;<br>
                             &nbsp;&nbsp;&nbsp;Console.Write("\n[ Lista: ");<br>
@@ -214,13 +201,8 @@
                                     &nbsp;&nbsp;&nbsp;Console.Write("]\n\n");<br>
                                 }   
                         </div>
-
-                        <div class="col-lg-7">
-                            <img class="img-fluid" src="images/cod4.png" alt="alternative">
-                        </div>
                         <p class="mb-5">Agora adicionamos o método percurso para para percorrer a lista e imprimir os valores 
                         </p>
-
                         <div class="tag_code ">
                             <p><code>namespace Lista{<br>
                             <br>
@@ -237,19 +219,9 @@
                                 &nbsp;&nbsp;&nbsp;}<br>
                                 }   
                         </div>
-
-                        <div class="col-lg-7">
-                            <img class="img-fluid" src="images/cod5.png" alt="alternative">
-                        </div>
                         <p class="mb-5">No método Main, criamos instâncias da classe lista, adicionamos alguns valores à lista e em seguida imprimimos os valores. No exemplo acima, a saída será: 7 12 22, que são os valores adicionados à lista.
-                        </p>
-      
-
+                     </p>
                 </div>
-
-
-
-
             </div> <!-- end of col -->
         </div> <!-- end of row -->
     </div> <!-- end of container -->
