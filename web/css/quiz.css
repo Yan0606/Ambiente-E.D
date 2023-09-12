@@ -139,7 +139,15 @@ body{
     font-size: 20px;
     font-weight: 600;
 }
+.navbar-brand {
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+}
 
+ .logo-image img {
+    width: 120px;
+	height: 110px;
+}
 .quiz_box header .timer{
     color: #000000;
     background: #532cff89;

@@ -148,7 +148,7 @@ function showResult(){
     quiz_box.classList.remove("activeQuiz"); 
     result_box.classList.add("activeResult"); 
     const scoreText = result_box.querySelector(".score_text");
-    if (userScore > 7){ 
+    if (userScore > 10){ 
        
         let scoreTag = '<span>OTIMO! 🎉<p>'+ userScore +'</p> DE <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;  
@@ -164,7 +164,7 @@ function showResult(){
 }
 
 function startTimer(time){
-    counter = setInterval(timer, 10000);
+    counter = setInterval(timer, 1000);
     function timer(){
         timeCount.textContent = time; 
         time--; 
@@ -172,7 +172,7 @@ function startTimer(time){
             let addZero = timeCount.textContent;
             timeCount.textContent = "0" + addZero; 
         }
-        if(time < 0) { 
+        if(time < 0){ 
             clearInterval(counter); 
             timeText.textContent = "ESGOTOU"; 
             const allOptions = option_list.children.length; 
@@ -193,11 +193,11 @@ function startTimer(time){
 }
 
 function startTimerLine(time){
-    counterLine = setInterval(timer, 29);
+    counterLine = setInterval(timer, 30);
     function timer(){
         time += 1; 
         time_line.style.width = time + "px"; 
-        if(time > 549){ 
+        if(time > 550){ 
             clearInterval(counterLine); 
         }
     }
