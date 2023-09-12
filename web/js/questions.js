@@ -55,7 +55,7 @@ let questions = [
     ]
   },
   {
-    numb: 6,
+    numb:  6,
     question: "O que é uma fila de prioridades encadeada?",
     answer: "Uma fila que mantém os elementos organizados de acordo com um valor de prioridade associado a cada elemento.",
     options: [

@@ -172,7 +172,7 @@ function startTimer(time){
             let addZero = timeCount.textContent;
             timeCount.textContent = "0" + addZero; 
         }
-        if(time < 0){ 
+        if(time < 0) { 
             clearInterval(counter); 
             timeText.textContent = "ESGOTOU"; 
             const allOptions = option_list.children.length; 
