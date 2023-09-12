@@ -119,7 +119,7 @@
 
                     <h2 class="mb-3">Exemplo</h2>
 
-                   
+
 
                     <div class="row">
 
@@ -161,12 +161,31 @@
                             <img class="img-fluid" src="images/Pilha1.png" alt="alternative"> <!--ANIMAÇÃO-->
                         </div>
                     </div> <!--div row-->
-
-
-                    <p class="mb-5">Nesse exemplo, temos uma classe que chamamos do No. A classe No representa um nó da
-                        lista e possui três membros: Data (para armazenar o valor), Prox (ponteiro para o próximo nó) e
-                        Pont (ponteiro para o nó anterior).</p>
-
+                    <h4 class="mb-2">Construtor da Pilha:</h4>
+                    <ul>
+                        <li>O construtor da classe PilhaEncadeada inicializa o topo como nulo, indicando que a pilha
+                            está vazia no início.</li>
+                    </ul>
+                    <h4 class="mb-2"> Método Push:</h4>
+                    <ul>
+                        <li> O método Push é usado para adicionar elementos à pilha.</li>
+                        <li> Ele cria um novo nó com o valor especificado e o torna o novo nó no topo da pilha,
+                            ajustando as referências.</li>
+                    </ul>
+                    <h4 class="mb-2">Método Pop:</h4>
+                    <ul>
+                        <li> O método Pop é usado para remover e retornar o elemento no topo da pilha.
+                        <li> Ele verifica se a pilha está vazia (o topo é nulo) e lança uma exceção se estiver.
+                        <li>Caso contrário, ele obtém o valor do topo, ajusta o topo para apontar para o próximo nó e
+                            retorna o
+                        <li>valor removido.</li>
+                    </ul>
+                    <h4 class="mb-2"> Método Print:</h4>
+                    <ul>
+                        <li> O método Print é usado para exibir os elementos da pilha na ordem em que foram empilhados.
+                        <li> Ele percorre a pilha a partir do topo e imprime os valores dos nós.</li>
+                        </p>
+                    </ul>
 
                     <div class="tag_code">
                         <p><code>public void Push(int valor)<br>
@@ -201,17 +220,37 @@
                          &nbsp;&nbsp;&nbsp;   }<br>
                         }<br></code></p>
                     </div>
-
-
-
-
-
-
-                    <p class="mb-5">Criamos uma classe que chama ListaDupla, é responsável por gerenciar a lista. Ela
-                        possui um ponteiro para o início da lista e um ponteiro para o final da lista. O método Add
-                        adiciona um novo elemento no final da lista, atualizando corretamente os ponteiros.
-                    </p>
-
+                    <h5 class="mb-1">Classe Program - Método Main:</h5>
+                    <ul>
+                        <li>No método Main, criamos uma instância da classe PilhaEncadeada chamada pilha.</li>
+                    </ul>
+                    <h6 class="mb-1">Empilhando Valores:</h6>
+                    <ul>
+                        <li> Chamamos o método Push quatro vezes para adicionar os valores 1, 2, 3 e 4 à pilha, respectivamente
+                        .</li>
+                    </ul>
+                    <h6 class="mb-2">Impressão da Pilha:</h6>
+                    <ul>
+                        <li>Chamamos o método Print para imprimir o conteúdo da pilha, que será "Pilha: 4 3 2 1", pois os elementos são impressos na ordem em que foram empilhados.</li>
+                    </ul>
+                    <h6 class="mb-2"> Desempilhando um Valor:</h6>
+                    <ul>
+                        <li> Chamamos o método Pop para remover o elemento no topo da pilha (4, no caso) e armazenamos esse valor em valorRemovido.</li>
+                        </p>
+                    </ul>
+                    <h6 class="mb-2"> Imprimindo o Valor Removido:</h6>
+                    <ul>
+                        <li> Imprimimos o valor removido usando Console.WriteLine, que mostrará "Valor removido: 4".</li>
+                        </p>
+                    </ul>
+                    <h6 class="mb-2"> Empilhando o Valor 10:</h6>
+                    <ul>
+                        <li> Chamamos o método Push para adicionar o valor 10 à pilha.</li></p>
+                    </ul>
+                    <h6 class="mb-2"> Impressão Atualizada da Pilha:</h4>
+                    <ul>
+                        <li> Chamamos o método Print novamente para imprimir o conteúdo atualizado da pilha, que será "Pilha: 10 3 2 1".</li></p>
+                    </ul>
 
                     <div class="tag_code">
                         <p><code>class Program<br>
@@ -235,27 +274,9 @@
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pilha.Print(); // Pilha: 10 3 2 1<br>
                                     &nbsp;&nbsp;&nbsp;   }<br>
                             }
-                            
-                            
-
                         </code></p>
                     </div>
-
-
-                    <p class="mb-5">No método Main, criamos uma instância da ListaDupla, adicionamos alguns elementos à
-                        lista (1, 2, 3 e 4) e em seguida imprimimos os elementos tanto na ordem direta quanto na ordem
-                        reversa. A saída será:
-                    </p>
-
-
-
-
-
                 </div>
-
-
-
-
             </div> <!-- end of col -->
         </div> <!-- end of row -->
     </div> <!-- end of container -->
