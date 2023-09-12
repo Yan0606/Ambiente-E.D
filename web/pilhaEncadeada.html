@@ -69,7 +69,8 @@
                         <a class="nav-link page-scroll" href="#quiz">Quiz</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Assuntos</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Assuntos</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
                             <a class="dropdown-item page-scroll" href="tad.html">TAD</a>
                             <div class="dropdown-divider"></div>
@@ -95,7 +96,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
-                    <h1>Listas Duplamente Encadeadas</h1>
+                    <h1>Pilha Encadeada</h1>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -109,35 +110,58 @@
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
                     <div class="text-box cmb-5">
-                        <p class="p-large">Uma lista duplamente encadeada, também conhecida como lista duplamente
-                            ligada, é uma estrutura de dados em que cada elemento (nó) contém um ponteiro para o próximo
-                            nó e um ponteiro para o nó anterior. Dessa forma, é possível percorrer a lista tanto no
-                            sentido da frente para trás quanto de trás para frente.</p>
+                        <p class="p-large">Uma pilha encadeada, também conhecida como pilha ligada ou stack, é uma
+                            estrutura de dados linear que segue o princípio do "last in, first out" (LIFO), o que
+                            significa que o último elemento adicionado à pilha é o primeiro a ser removido. Neste tipo
+                            de estrutura, os elementos são organizados em uma sequência encadeada de nós, onde cada nó
+                            contém um valor e uma referência para o próximo nó na pilha.</p>
                     </div> <!-- end of text-box -->
 
                     <h2 class="mb-3">Exemplo</h2>
 
-                    <p>Aqui está um exemplo de implementação de uma lista duplamente encadeada em C#:</p>
+                    <p>Aqui está um exemplo de implementação de uma pilha encadeada em C#:</p>
 
-                    <div class="col-lg-9">
-                        <img class="img-fluid" src="images/Duplamente1.png" alt="alternative"> <!--ANIMAÇÃO-->
-                    </div>
-
-                    <div class="tag_code ">
-                        <p><code>public class No<br>
-                        {<br>
-                        &nbsp;&nbsp;&nbsp;public int Data;<br>
-                        &nbsp;&nbsp;&nbsp;public No Prox;<br>
-                        &nbsp;&nbsp;&nbsp;public No Pont;<br>
-                        <br>
-                        &nbsp;&nbsp;&nbsp; public No(int data)<br>
-                        &nbsp;&nbsp;&nbsp;{<br>
-                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Data = data;<br>
-                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Prox = null;<br>
-                            &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;Pont = null;<br>
-                            &nbsp;&nbsp;&nbsp;  }<br>
-                        }<br></code></p>
-                    </div>
+                    <div class="row">
+                        
+                    
+                        <div class="col-lg-7">
+                            <p>Aqui está um exemplo de implementação de uma pilha encadeada em C#:</p>
+                            Definindo a Classe PilhaEncadeada:
+                            <ul>
+                                <li>A classe PilhaEncadeada é definida para representar a pilha encadeada.</li>
+                                <li>Ela contém uma classe interna chamada No, que representa os nós individuais da pilha.</li>
+                                <li>Há uma variável privada topo que aponta para o nó no topo da pilha.</li>
+                            </ul>
+                    
+                            <div class="tag_code">
+                                <p><code>using System;<br>
+                                    <br>
+                                    class PilhaEncadeada<br>
+                                    {<br>
+                                        &nbsp;&nbsp;&nbsp;   private class No<br>
+                                        &nbsp;&nbsp;&nbsp;  {<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   public int Valor { get; set; }<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public No Proximo { get; set; }<br>
+                                            <br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public No(int valor)<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  {<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    Valor = valor;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Proximo = null;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  }<br>
+                                                &nbsp;&nbsp;&nbsp; }<br>
+                                                <br>
+                                                &nbsp;&nbsp;&nbsp;  private No topo;<br>
+                                                <br>
+                                                &nbsp;&nbsp;&nbsp;   public PilhaEncadeada()<br>
+                                                &nbsp;&nbsp;&nbsp; {<br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   topo = null;<br>
+                                                    &nbsp;&nbsp;&nbsp;  }<br></code></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <img class="img-fluid" src="images/Pilha1.png" alt="alternative"> <!--ANIMAÇÃO-->
+                        </div>
+                    </div> <!--div row-->
 
 
                     <p class="mb-5">Nesse exemplo, temos uma classe que chamamos do No. A classe No representa um nó da
@@ -146,31 +170,41 @@
 
 
                     <div class="tag_code">
-                        <p><code>public class ListaDupla<br>
-                        {<br>
-                        &nbsp;&nbsp;&nbsp;private No inicio;<br>
-                        &nbsp;&nbsp;&nbsp;private No fim;<br>
-                        &nbsp;&nbsp;&nbsp;public void Add(int data);<br>
-                        {<br>
-                        &nbsp;&nbsp;&nbsp; No newNo = new No(data;)<br>
-                        &nbsp;&nbsp;&nbsp;if (inicio == null)<br>
-                            &nbsp;&nbsp;&nbsp; {<br>
-                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;inicio = newNo;<br>
-                            &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;fim = newNo;<br>
-                            &nbsp;&nbsp;&nbsp;  }<br>
-                            &nbsp;&nbsp;&nbsp; else<br>
-                            &nbsp;&nbsp;&nbsp; }<br>
-                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; fim.Prox = newNo;<br>
-                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; newNo.Pont = fim;<br>
-                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; fim = newNo;<br>
-                            &nbsp;&nbsp;&nbsp; }<br>
-                            
-
+                        <p><code>public void Push(int valor)<br>
+                            {<br>
+                                &nbsp;&nbsp;&nbsp; No novoNo = new No(valor);<br>
+                                &nbsp;&nbsp;&nbsp;  novoNo.Proximo = topo;<br>
+                                &nbsp;&nbsp;&nbsp;topo = novoNo;<br>
+                            }<br>
+                            <br>
+                            public int Pop()<br>
+                            {<br>
+                                &nbsp;&nbsp;&nbsp;  if (topo == null)<br>
+                                &nbsp;&nbsp;&nbsp;  {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    throw new InvalidOperationException("A pilha está vazia.");<br>
+                                    &nbsp;&nbsp;&nbsp; }<br>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;   int valorRemovido = topo.Valor;<br>
+                                    &nbsp;&nbsp;&nbsp;  topo = topo.Proximo;<br>
+                                    &nbsp;&nbsp;&nbsp; return valorRemovido;<br>
+                            }<br>
+                            <br>
+                            public void Print()<br>
+                            {<br>
+                                &nbsp;&nbsp;&nbsp;  No atual = topo;<br>
+                                &nbsp;&nbsp;&nbsp;  Console.Write("Pilha: ");<br>
+                                &nbsp;&nbsp;&nbsp; while (atual != null)<br>
+                                &nbsp;&nbsp;&nbsp; {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    Console.Write(atual.Valor + " ");<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  atual = atual.Proximo;<br>
+                                    &nbsp;&nbsp;&nbsp;  }<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Console.WriteLine();<br>
+                         &nbsp;&nbsp;&nbsp;   }<br>
                         }<br></code></p>
                     </div>
 
 
-                    
+
 
 
 
@@ -181,69 +215,40 @@
 
 
                     <div class="tag_code">
-                        <p><code>public void MostrarAvancar()<br>
-                        {<br>
-                        &nbsp;&nbsp;&nbsp;No current = inicio;<br>
-                        &nbsp;&nbsp;&nbsp;while (current != null)<br>
-                        &nbsp;&nbsp;&nbsp;{<br>
-                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Console.Write(current.Data + " ");<br>
-                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; current = current.Prox;<br>
-                        &nbsp;&nbsp;&nbsp; }<br>
-                            &nbsp;&nbsp;&nbsp;Console.WriteLine();<br>
-                            }<br>
-                            &nbsp;&nbsp;&nbsp;  public void MostrarRecuar()<br>
-                            &nbsp;&nbsp;&nbsp;  {<br>
-                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; No currente = fim;<br>
-                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; while (currente != null)<br>
-                            &nbsp;&nbsp;&nbsp;  {<br>
-                            &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;Console.Write(current.Data + " ");<br>
-                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; current = current.Pont;<br>
-                            &nbsp;&nbsp;&nbsp; }<br>
-                            &nbsp;&nbsp;&nbsp; Console.WriteLine();<br>
-                            
-                            
-
-                        }<br></code></p>
-                    </div>
-
-                    <div class="col-lg-9">
-                        <img class="img-fluid" src="images/Duplamente2.png" alt="alternative">
-                    </div>
-                    <p class="mb-2">Os métodos MostrarAvancar e MostrarRecuar percorrem a lista, imprimindo os elementos
-                        na ordem direta e reversa, respectivamente.
-                    </p>
-
-                    <div class="tag_code">
-                        <p><code>
-                            public class Program<br>
+                        <p><code>class Program<br>
                             {<br>
-                                &nbsp;&nbsp;&nbsp; public static void Main(string[] args)<br>
-                                &nbsp;&nbsp;&nbsp;   {<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   ListaDupla list = new ListaDupla();<br>
+                                &nbsp;&nbsp;&nbsp;   static void Main()<br>
+                                &nbsp;&nbsp;&nbsp;  {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    PilhaEncadeada pilha = new PilhaEncadeada();<br>
                                     <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; list.Add(1);<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; list.Add(2);<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; list.Add(3);<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; list.Add(4);<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  pilha.Push(1);<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pilha.Push(2);<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pilha.Push(3);<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pilha.Push(4);<br>
                                     <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Console.WriteLine("Avançar: ";)<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  list.MostrarAvancar();<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pilha.Print(); // Pilha: 4 3 2 1<br>
                                     <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; consoleWriteLine("Recuar:");<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; list.MostrarRecuar();<br>
-                                    &nbsp;&nbsp;&nbsp;    }<br>
-                            }<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  int valorRemovido = pilha.Pop(); // Remove o 4<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("Valor removido: " + valorRemovido);<br>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pilha.Push(10); // Adiciona o 10<br>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pilha.Print(); // Pilha: 10 3 2 1<br>
+                                    &nbsp;&nbsp;&nbsp;   }<br>
+                            }
+                            
+                            
 
-
-
-                            </code></p>
+                        </code></p>
                     </div>
+
+
                     <p class="mb-5">No método Main, criamos uma instância da ListaDupla, adicionamos alguns elementos à
                         lista (1, 2, 3 e 4) e em seguida imprimimos os elementos tanto na ordem direta quanto na ordem
                         reversa. A saída será:
                     </p>
 
-                    
+
 
 
 
@@ -266,7 +271,10 @@
                 <div class="col-lg-12">
                     <div class="footer-col first">
                         <h6>Desenvolvimento</h6>
-                        <p class="p-small">Desenvolvido por: <a href="https://github.com/Yan0606" target="_blank">Yan Andrade</a>, <a href="https://github.com/adryanzx" target="_blank">Adryan Freire</a>, Diogo Neves e Arthur Marques, estudantes de Análise e Desenvolvimento de Sistemas da Fatec de Presidente Prudente.</p>                            
+                        <p class="p-small">Desenvolvido por: <a href="https://github.com/Yan0606" target="_blank">Yan
+                                Andrade</a>, <a href="https://github.com/adryanzx" target="_blank">Adryan Freire</a>,
+                            Diogo Neves e Arthur Marques, estudantes de Análise e Desenvolvimento de Sistemas da Fatec
+                            de Presidente Prudente.</p>
                     </div> <!-- end of footer-col -->
                     <div class="footer-col second">
                         <h6>Auxilio e Direção </h6>
