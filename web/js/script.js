@@ -26,11 +26,11 @@ continue_btn.onclick = ()=>{
     quiz_box.classList.add("activeQuiz"); 
     showQuetions(0); 
     queCounter(1); 
-    startTimer(15); 
+    startTimer(50); 
     startTimerLine(0); 
 }
 
-let timeValue =  15;
+let timeValue =  50;
 let que_count = 0;
 let que_numb = 1;
 let userScore = 0;
@@ -45,7 +45,7 @@ const quit_quiz = result_box.querySelector(".buttons .quit");
 restart_quiz.onclick = ()=>{
     quiz_box.classList.add("activeQuiz"); 
     result_box.classList.remove("activeResult"); 
-    timeValue = 15;
+    timeValue = 50;
     que_count = 0;
     que_numb = 1;
     userScore = 0;
@@ -193,11 +193,11 @@ function startTimer(time){
 }
 
 function startTimerLine(time){
-    counterLine = setInterval(timer, 30);
+    counterLine = setInterval(timer, 185);
     function timer(){
-        time += 1; 
+        time += 2; 
         time_line.style.width = time + "px"; 
-        if(time > 550){ 
+        if(time > 549){ 
             clearInterval(counterLine); 
         }
     }
@@ -205,6 +205,6 @@ function startTimerLine(time){
 
 function queCounter(index){
     
-    let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
+    let totalQueCounTag = '<span><p>'+ index +'</p> de <p>'+ questions.length +'</p> Questão</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag; 
 }
