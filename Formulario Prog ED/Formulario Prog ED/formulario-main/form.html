@@ -27,14 +27,14 @@
 	</div>
 	<div class="form-container sign-in-container">
 		
-		<form method="POST" action="../Banco/Conexão/Cadastro.php">
+		<form method="POST" action="../Banco/Conexão/Cadastro.php" onsubmit="false">
 				<h1>Cadastre-se</h1>
 				
-				<input type="Nome" maxlength="50" placeholder="Nome"  name="inputCadastroNome" />
-				<input type="email" placeholder="Email" name="inputCadastroemail" />
-				<input type="date" placeholder="Data de Nascimento" name="inputCadastrodatanasc"/>
-				<input type="password" placeholder="Senha" name="inputCadastrosenha"/>
-				<input type="submit" value="Enviar" id="Enviar" name="Enviar">
+				<input type="Nome" maxlength="50" placeholder="Nome"  name="inputCadastroNome" id="cadastro_input1" />
+				<input type="email" placeholder="Email" name="inputCadastroemail" id="cadastro_input2"/>
+				<input type="date" placeholder="Data de Nascimento" name="inputCadastrodatanasc" id="cadastro_input2" />
+				<input type="password" placeholder="Senha" name="inputCadastrosenha" id="cadastro_input3" />
+				<input type="submit" value="Enviar" id="Enviar2" name="Enviar">
 			
 		</form>
 	</div>
@@ -59,6 +59,11 @@
 		const signInButton = document.getElementById('signIn');
 		const container = document.getElementById('container');
 		
+		document.getElementById('Enviar2').addEventListener('click', () =>{
+			for(let i=1; i < 5; i++){
+				document.getElementById('cadastro_input'+i).value = "";
+			}
+		})
 		signUpButton.addEventListener('click', () => {
 			container.classList.add("right-panel-active");
 		});

@@ -65,15 +65,21 @@
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="index.html#details">Manual de Instalação</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#quiz">Quiz</a>
+                    </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Assuntos</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Assuntos</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
                             <a class="dropdown-item page-scroll" href="tad.html">TAD</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="lista.html">Lista simples </a>
+                            <a class="dropdown-item page-scroll" href="lista.html">Listas Simples</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item page-scroll" href="listaDupla.html">Lista Dupla</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="fila.html">Fila FIFO</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="pilhaEncadeada.html">Pilha Encadeada</a>
                         </div>
                     </li>
                 </ul>
@@ -102,15 +108,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
-                    <div class="text-box mt-5 mb-5">
-                        <p class="p-large">Uma lista duplamente encadeada, também conhecida como lista duplamente ligada, é uma estrutura de dados em que cada elemento (nó) contém um ponteiro para o próximo nó e um ponteiro para o nó anterior. Dessa forma, é possível percorrer a lista tanto no sentido da frente para trás quanto de trás para frente.</p>
+                    <div class="text-box cmb-5">
+                        <p class="p-large">Uma lista duplamente encadeada, também conhecida como lista duplamente
+                            ligada, é uma estrutura de dados em que cada elemento (nó) contém um ponteiro para o próximo
+                            nó e um ponteiro para o nó anterior. Dessa forma, é possível percorrer a lista tanto no
+                            sentido da frente para trás quanto de trás para frente.</p>
                     </div> <!-- end of text-box -->
 
                     <h2 class="mb-3">Exemplo</h2>
 
                     <p>Aqui está um exemplo de implementação de uma lista duplamente encadeada em C#:</p>
 
-                    <div class="tag_code">
+                    <div class="col-lg-9">
+                        <img class="img-fluid" src="images/Duplamente1.png" alt="alternative"> <!--ANIMAÇÃO-->
+                    </div>
+
+                    <div class="tag_code ">
                         <p><code>public class No<br>
                         {<br>
                         &nbsp;&nbsp;&nbsp;public int Data;<br>
@@ -126,12 +139,10 @@
                         }<br></code></p>
                     </div>
 
-                    <div class="row"></div>
-                    <div class="col-lg-7">
-                        <img class="img-fluid" src="images/cod6.png" alt="alternative">  <!--ANIMAÇÃO-->
-                    </div>
 
-                    <p class="mb-5">Nesse exemplo, temos uma classe que chamamos do No. A classe No representa um nó da lista e possui três membros: Data (para armazenar o valor), Prox (ponteiro para o próximo nó) e Pont (ponteiro para o nó anterior).</p>
+                    <p class="mb-5">Nesse exemplo, temos uma classe que chamamos do No. A classe No representa um nó da
+                        lista e possui três membros: Data (para armazenar o valor), Prox (ponteiro para o próximo nó) e
+                        Pont (ponteiro para o nó anterior).</p>
 
 
                     <div class="tag_code">
@@ -159,33 +170,82 @@
                     </div>
 
 
-                    <div class="col-lg-7">
-                        <img class="img-fluid" src="images/cod7.png" alt="alternative">
+                    
+
+
+
+                    <p class="mb-5">Criamos uma classe que chama ListaDupla, é responsável por gerenciar a lista. Ela
+                        possui um ponteiro para o início da lista e um ponteiro para o final da lista. O método Add
+                        adiciona um novo elemento no final da lista, atualizando corretamente os ponteiros.
+                    </p>
+
+
+                    <div class="tag_code">
+                        <p><code>public void MostrarAvancar()<br>
+                        {<br>
+                        &nbsp;&nbsp;&nbsp;No current = inicio;<br>
+                        &nbsp;&nbsp;&nbsp;while (current != null)<br>
+                        &nbsp;&nbsp;&nbsp;{<br>
+                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Console.Write(current.Data + " ");<br>
+                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; current = current.Prox;<br>
+                        &nbsp;&nbsp;&nbsp; }<br>
+                            &nbsp;&nbsp;&nbsp;Console.WriteLine();<br>
+                            }<br>
+                            &nbsp;&nbsp;&nbsp;  public void MostrarRecuar()<br>
+                            &nbsp;&nbsp;&nbsp;  {<br>
+                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; No currente = fim;<br>
+                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; while (currente != null)<br>
+                            &nbsp;&nbsp;&nbsp;  {<br>
+                            &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;Console.Write(current.Data + " ");<br>
+                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; current = current.Pont;<br>
+                            &nbsp;&nbsp;&nbsp; }<br>
+                            &nbsp;&nbsp;&nbsp; Console.WriteLine();<br>
+                            
+                            
+
+                        }<br></code></p>
                     </div>
 
-                   
+                    <div class="col-lg-9">
+                        <img class="img-fluid" src="images/Duplamente2.png" alt="alternative">
+                    </div>
+                    <p class="mb-2">Os métodos MostrarAvancar e MostrarRecuar percorrem a lista, imprimindo os elementos
+                        na ordem direta e reversa, respectivamente.
+                    </p>
 
-                    <p class="mb-5">Criamos uma classe que chama ListaDupla, é responsável por gerenciar a lista. Ela possui um ponteiro para o início da lista e um ponteiro para o final da lista. O método Add adiciona um novo elemento no final da lista, atualizando corretamente os ponteiros.
-                        </p>
+                    <div class="tag_code">
+                        <p><code>
+                            public class Program<br>
+                            {<br>
+                                &nbsp;&nbsp;&nbsp; public static void Main(string[] args)<br>
+                                &nbsp;&nbsp;&nbsp;   {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   ListaDupla list = new ListaDupla();<br>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; list.Add(1);<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; list.Add(2);<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; list.Add(3);<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; list.Add(4);<br>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Console.WriteLine("Avançar: ";)<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  list.MostrarAvancar();<br>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; consoleWriteLine("Recuar:");<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; list.MostrarRecuar();<br>
+                                    &nbsp;&nbsp;&nbsp;    }<br>
+                            }<br>
 
-                        <div class="col-lg-7">
-                            <img class="img-fluid" src="images/cod8.png" alt="alternative">
-                        </div>
-                        <p class="mb-2">Os métodos MostrarAvancar e MostrarRecuar percorrem a lista, imprimindo os elementos na ordem direta e reversa, respectivamente.
-                        </p>
-                        
 
-                        <div class="col-lg-7">
-                            <img class="img-fluid" src="images/cod9.png" alt="alternative">
-                        </div>
-                        <p class="mb-5">No método Main, criamos uma instância da ListaDupla, adicionamos alguns elementos à lista (1, 2, 3 e 4) e em seguida imprimimos os elementos tanto na ordem direta quanto na ordem reversa. A saída será: 
-                        </p>
 
-                        <div class="col-lg-8">
-                            <img class="img-fluid" src="images/cod10.png" alt="alternative">
-                        </div>
-                       
-      
+                            </code></p>
+                    </div>
+                    <p class="mb-5">No método Main, criamos uma instância da ListaDupla, adicionamos alguns elementos à
+                        lista (1, 2, 3 e 4) e em seguida imprimimos os elementos tanto na ordem direta quanto na ordem
+                        reversa. A saída será:
+                    </p>
+
+                    
+
+
 
                 </div>
 
@@ -206,8 +266,7 @@
                 <div class="col-lg-12">
                     <div class="footer-col first">
                         <h6>Desenvolvimento</h6>
-                        <p class="p-small">Desenvolvido por Yan Andrade e Breno Bacelar, estudantes de Análise e
-                            Desenvolvimento de Sistemas da Fatec de Presidente Prudente.</p>
+                        <p class="p-small">Desenvolvido por: <a href="https://github.com/Yan0606" target="_blank">Yan Andrade</a>, <a href="https://github.com/adryanzx" target="_blank">Adryan Freire</a>, Diogo Neves e Arthur Marques, estudantes de Análise e Desenvolvimento de Sistemas da Fatec de Presidente Prudente.</p>                            
                     </div> <!-- end of footer-col -->
                     <div class="footer-col second">
                         <h6>Auxilio e Direção </h6>
@@ -243,7 +302,7 @@
                             </a>
                         </span>
 
-                        <strong>www.fatecsp.br</strong></a></p>
+                        <a href="www.fatecsp.br"><strong>Fatec</strong></a></p>
                     </div> <!-- end of footer-col -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->

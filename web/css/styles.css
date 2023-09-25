@@ -56,9 +56,6 @@ h6 {
 	line-height: 1.5rem;
 }
 
-a :hover{
-	
-}
 
 .h1-large {
 	font-size: 2.75rem;
@@ -132,9 +129,7 @@ a:hover {
 	background-color: #222222;
 }
 
-.tag_code p{
-	color: white;
-}
+
 
 .section-divider {
 	display: inline-block;
