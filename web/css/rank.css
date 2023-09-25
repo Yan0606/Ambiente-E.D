@@ -9,7 +9,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
     padding: 20px; /* Espaçamento interno */
     max-width: 600px; /* Largura máxima do card */
-    margin: 0 auto; /* Centralizar o card horizontalmente */
+    margin:0 auto;/* Centralizar o card horizontalmente */
 }
 
 table {

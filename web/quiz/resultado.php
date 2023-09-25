@@ -23,11 +23,16 @@ if (!isset($_SESSION["username"])) {
     <?php
     // Perguntas e respostas corretas
     $perguntas = [
-      "pergunta1" => 3,
-      "pergunta2" => 10,
-      "pergunta3" => 80,
-      "pergunta4" => 49,
-      "pergunta5" => "Sim" // Resposta correta em string
+      "pergunta1" =>"Uma coleção de elementos sem nenhuma ordem especifica",
+      "pergunta2" =>"Inserção e remoção eficientes em qualquer direção",
+      "pergunta3" =>"Um conjunto de operações bem definido em um tipo de dado, ocultando a aplicação subjacente",
+      "pergunta4" =>"Inserir elementos no topo e remover elementos do topo.",
+      "pergunta5" =>"A fila encadeada segue o princípio FIFO, enquanto a pilha segue o princípio LIFO.", // Resposta correta em string
+      "pergunta6" =>"Uma fila que mantém os elementos organizados de acordo com um valor de prioridade associado a cada elemento.",
+      "pergunta7" =>"return items.Count == 0;",
+      "pergunta8" =>"public int Dequeue(){if (!IsEmpty()){return items.Dequeue();}else{return -1;}}",
+      "pergunta9" =>"Eficiência e correção.",
+      "pergunta10"=>"Melhorar a eficiência do programa e facilitar a manipulação de dados."
     ];
 
     // Inicializa a pontuação
