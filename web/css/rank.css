@@ -1,0 +1,42 @@
+body {
+    background-color: #f0f0f0; /* Fundo cinza claro */
+    font-family: 'Poppins', sans-serif; /* Fonte Poppins */
+}
+
+.ranking-container {
+    background-color: #fff; /* Fundo branco para o card */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px; /* Espaçamento interno */
+    max-width: 600px; /* Largura máxima do card */
+    margin: 0 auto; /* Centralizar o card horizontalmente */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Espaço entre a tabela e o título */
+}
+
+th, td {
+    border: 1px solid #ccc; /* Borda das células */
+    padding: 10px; /* Espaçamento interno das células */
+    text-align: left; /* Alinhamento do texto à esquerda */
+}
+
+th {
+    background-color: #f2f2f2; /* Fundo cinza claro para cabeçalho */
+    font-weight: bold; /* Texto em negrito */
+}
+
+button {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    border: none; /* Sem borda */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Cursor de mão ao passar por cima */
+    text-decoration: none; /* Sem decoração de texto */
+    display: inline-block; /* Exibir como bloco em linha */
+    margin-top: 20px; /* Espaço entre a tabela e o botão */
+}

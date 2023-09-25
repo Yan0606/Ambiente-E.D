@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="Your description">
+        <meta name="author" content="Your name">
+
+        <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+        <meta property="og:site_name" content="" /> <!-- website name -->
+        <meta property="og:site" content="" /> <!-- website link -->
+        <meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+        <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+        <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+        <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+        <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+        <!-- Webpage Title -->
+        <title>TAD</title>
+        
+        <!-- Styles -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/fontawesome-all.css" rel="stylesheet">
+        <link href="css/swiper.css" rel="stylesheet">
+        <link href="css/magnific-popup.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        
+        <!-- Favicon  -->
+        <link rel="icon" href="images/logo2.png">
+    </head>
+    <body data-spy="scroll" data-target=".fixed-top">
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+            <div class="container">
+                
+                <!-- Text Logo - Use this if you don't have a graphic logo -->
+                <!-- <a class="navbar-brand logo-text page-scroll" href="index.php">Name</a> -->
+
+                <!-- Image Logo -->
+                <a class="navbar-brand logo-image" href="index.php"><img src="images/logo1.png" alt="alternative"></a> 
+
+                <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="index.php#header">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="index.php#intro">Introdução</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="index.php#features">Estrutura de Dados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="index.php#details">Manual de Instalação</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#quiz">Quiz</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Assuntos</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown01">
+                                <a class="dropdown-item page-scroll" href="tad.html">TAD</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item page-scroll" href="lista.html">Listas Simples</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item page-scroll" href="listaDupla.html">Lista Dupla</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item page-scroll" href="fila.html">Fila FIFO</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item page-scroll" href="pilhaEncadeada.html">Pilha Encadeada</a>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div> <!-- end of navbar-collapse -->
+            </div> <!-- end of container -->
+        </nav> <!-- end of navbar -->
+        <!-- end of navigation -->
+
+
+        <!-- Header -->
+        <header class="ex-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-10 offset-xl-1">
+                        <h1>TAD-Tipo Abstrato de Dados</h1>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </header> <!-- end of ex-header -->
+        <!-- end of header -->
+
+
+        <!-- Basic -->
+        <div class="ex-basic-1 pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-10 offset-xl-1">
+                        <div class="text-box mt-5 mb-5">
+                            <p class="p-large">Um Tipo Abstrato de Dados (TAD) é um conceito em programação que define uma estrutura de dados abstrata juntamente com as operações que podem ser realizadas nessa estrutura. O TAD encapsula os detalhes internos da implementação, fornecendo uma interface clara e consistente para o uso da estrutura de dados. Aqui estão três exemplos comuns de TAD:</p>
+                        </div> <!-- end of text-box -->
+
+                        <h2 class="mb-3">1. Pilha</h2>
+                        <p>Uma pilha é um TAD que segue a estrutura de dados do tipo LIFO (Last-In, First-Out), onde o último elemento inserido é o primeiro a ser removido. As operações básicas em uma pilha são "push" (inserir um elemento no topo) e "pop" (remover o elemento do topo). </p>
+                        <p class="mb-5">O TAD da pilha esconde a implementação subjacente, permitindo que os usuários acessem e manipulem a pilha apenas por meio dessas operações. Um exemplo prático é o uso de uma pilha para desfazer ações em um editor de texto, onde as ações são empilhadas e podem ser desfeitas uma a uma.</p>
+
+                        <h2 class="mb-3">2. Lista Ligada</h2>
+                        <p>Uma lista ligada é um TAD que consiste em uma sequência de nós, onde cada nó contém um valor e uma referência ao próximo nó da lista. As operações básicas em uma lista ligada são "inserir" (adicionar um elemento no início, no final ou em uma posição específica) e "remover" (excluir um elemento em uma posição específica). </p>
+                        <p class="mb-5">A lista ligada abstrai a complexidade da alocação de memória e gerenciamento de ponteiros, permitindo que os usuários manipulem a lista por meio de operações mais simples. Um exemplo de uso de lista ligada é a implementação de uma lista de reprodução de músicas, onde cada nó representa uma música e a lista é navegada para reproduzir, adicionar ou remover músicas.</p>
+                        
+
+                        <h2 class="mb-3">3. Árvore binária de busca</h2>
+                        <p class="mb-3">Uma árvore binária de busca é um TAD que organiza elementos em uma estrutura de árvore, onde cada nó tem no máximo dois filhos, e os elementos são ordenados de forma que os elementos menores estão à esquerda e os maiores à direita.</p>
+                        <p class="mb-3">As operações básicas em uma árvore binária de busca incluem "inserir" (adicionar um elemento à árvore), "buscar" (encontrar um elemento na árvore) e "remover" (excluir um elemento da árvore). A árvore binária de busca oferece uma forma eficiente de busca e organização de dados.</p>
+                        <p class="mb-5">Um exemplo prático é a implementação de um dicionário, onde as palavras são armazenadas em uma árvore binária de busca, facilitando a pesquisa e a inserção rápida de novas palavras.</p>
+                        
+                        
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of ex-basic-1 -->
+        <!-- end of basic -->
+
+
+       <!-- Footer -->
+       <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-col first">
+                        <h6>Desenvolvimento</h6>
+                        <p class="p-small">Desenvolvido por: <a href="https://github.com/Yan0606" target="_blank">Yan Andrade</a>, <a href="https://github.com/adryanzx" target="_blank">Adryan Freire</a>, Diogo Neves e Arthur Marques, estudantes de Análise e Desenvolvimento de Sistemas da Fatec de Presidente Prudente.</p>                    
+                    </div> <!-- end of footer-col -->
+                    <div class="footer-col second">
+                        <h6>Auxilio e Direção </h6>
+                        <p class="p-small">Professor: Bruno Santos De Lima</p>
+                        
+                    
+                    </div> <!-- end of footer-col -->
+                    <div class="footer-col third">
+                        <span class="fa-stack">
+                            <a href="https://www.facebook.com/FatecPrudente">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://twitter.com/FatecPrudente">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                       
+                        <span class="fa-stack">
+                            <a href="https://www.instagram.com/fatecprudente/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+
+                        <span class="fa-stack">
+                            <a href="https://github.com/Yan0606/Ambiente-E.D" target="_blank">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <a href="http://www.fatecsp.br" target="_blank"><strong>Fatec</strong></a></p>
+                    </div> <!-- end of footer-col -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © FatecPrudente</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+        
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
