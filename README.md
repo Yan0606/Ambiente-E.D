@@ -1,11 +1,33 @@
-# Ambiente-E.D
-<h3>Trabalho Prático 2 - Ambiente de Ensino de Estrutura de Dados</h3>
+# Data Structures in Web Development 🌐
 
-<h4>WebSite explicando Sobre Estrutura de Dados, em conteúdos reladionados <h4>
+Welcome to the repository on Data Structures applied to web development! This project covers essential concepts of data structures, exploring their implementation in a practical context using HTML, CSS, PHP, Bootstrap and MySQL relational database. The proposal is to offer examples and tutorials to facilitate learning.
 
-<h5>Para o Banco de Dados MySQL, foi usado EasyPHP. O VSCode serviu como editor. <br>
-  Linguagens: PHP, CSS, JavaScript.<br>
-  Bootstrap foi o framework front-end.</h5>
-  
+## Contents 📋
 
-![trabalho-pratico](https://github.com/Yan0606/Ambiente-E.D/assets/116196986/14bca7fc-2523-4b7b-b625-0dcd7adc1aa7)
+The project includes topics such as:
+
+1. **Chained Stack:**
+   - Implementation of a chained stack for data manipulation in the web context.
+
+2. **Chained Queue:**
+   - Example of a linked queue, both simply linked and doubly linked.
+
+3. **Binary Tree:**
+   - Demonstration of a binary tree and its applications in web development.
+
+## Technologies Used 🚀
+
+-HTML
+-CSS
+-PHP
+- Bootstrap
+- MySQL (Relational Database)
+
+## How to Use 🛠️
+
+1. Clone this repository:
+
+```bash
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
+ ```
+2. Export the database (sql file) and place it in mysql
