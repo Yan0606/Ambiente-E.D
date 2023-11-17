@@ -17,11 +17,10 @@ The project includes topics such as:
 
 ## Technologies Used 🚀
 
--HTML
--CSS
--PHP
-- Bootstrap
-- MySQL (Relational Database)
+<a href="https://skillicons.dev">
+      <img src="https://skillicons.dev/icons?i=html,css,php,bootstrap,mysql" />
+    </a>
+
 
 ## How to Use 🛠️
 
