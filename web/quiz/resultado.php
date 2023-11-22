@@ -33,6 +33,11 @@ if (!isset($_SESSION["username"])) {
       "pergunta8" =>"public int Dequeue(){if (!IsEmpty()){return items.Dequeue();}else{return -1;}}",
       "pergunta9" =>"Eficiência e correção.",
       "pergunta10"=>"Melhorar a eficiência do programa e facilitar a manipulação de dados."
+      "pergunta11" =>"As principais características incluem a ordenação das chaves, onde cada nó tem no máximo dois filhos, e a propriedade de que as chaves à esquerda são menores, e as chaves à direita são maiores que a chave do nó.",
+      "pergunta12" =>"Árvores B diferem em estrutura ao permitir mais de dois filhos por nó e são frequentemente usadas para organização eficiente de blocos de dados em disco, enquanto as Árvores Binárias de Busca são mais adequadas para estruturas em memória principal.",
+      "pergunta13" =>"O papel da estrutura de Árvore Trie é especializado para armazenar conjuntos dinâmicos ou ordenados de chaves, como strings, sendo eficiente na busca de prefixos comuns.",
+      "pergunta14" =>"Vantagens incluem a manutenção automática do balanceamento, garantindo operações eficientes em termos de tempo para busca, inserção e remoção",
+      "pergunta15" =>"Pode ser preferível em situações que exigem um equilíbrio eficiente, pois a coloração dos nós permite manter um balanceamento aproximado, tornando operações de busca, inserção e remoção mais rápidas em comparação com uma Árvore Binária de Busca não balanceada.",
     ];
 
     // Inicializa a pontuação

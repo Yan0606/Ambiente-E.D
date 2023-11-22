@@ -192,6 +192,90 @@
             </label>
           </fieldset>
 
+           <!-- Pergunta 11 -->
+        <fieldset>
+            <legend>11. Quais são as principais características e propriedades de uma Árvore Binária de Busca?</legend>
+            <label>
+              <input type="radio" name="pergunta11" value="As principais características incluem a ordenação das chaves, onde cada nó tem no máximo dois filhos, e a propriedade de que as chaves à esquerda são menores."> As principais características incluem a ordenação das chaves, onde cada nó tem no máximo dois filhos, e a propriedade de que as chaves à esquerda são menores.
+            </label>
+            <label>
+              <input type="radio" name="pergunta11" value="As principais características incluem a ordenação das chaves, onde cada nó tem no máximo dois filhos, e a propriedade de que as chaves à esquerda são menores, e as chaves à direita são maiores que a chave do nó." required> As principais características incluem a ordenação das chaves, onde cada nó tem no máximo dois filhos, e a propriedade de que as chaves à esquerda são menores, e as chaves à direita são maiores que a chave do nó.
+            </label>
+            <label>
+              <input type="radio" name="pergunta11" value="As principais características incluem a ordenação das chaves, onde cada nó tem no máximo dois filhos, e a propriedade de que as chaves à esquerda são maiores, e as chaves à direita são menores que a chave do nó.">As principais características incluem a ordenação das chaves, onde cada nó tem no máximo dois filhos, e a propriedade de que as chaves à esquerda são maiores, e as chaves à direita são menores que a chave do nó.
+            </label>
+            <label>
+              <input type="radio" name="pergunta11" value="As principais características incluem a ordenação das chaves, onde cada nó tem no máximo um filho, e a propriedade de que as chaves à esquerda são menores, e as chaves à direita são maiores que a chave do nó.">As principais características incluem a ordenação das chaves, onde cada nó tem no máximo um filho, e a propriedade de que as chaves à esquerda são menores, e as chaves à direita são maiores que a chave do nó.
+            </label>
+          </fieldset>
+
+           <!-- Pergunta 12 -->
+        <fieldset>
+            <legend>12.Como as Árvores B diferem das Árvores Binárias de Busca em termos de estrutura e aplicação?</legend>
+            <label>
+              <input type="radio" name="pergunta12" value=" Árvores B diferem em estrutura ao permitir mais de dois filhos por nó e são frequentemente usadas para organização eficiente de blocos de dados em disco."> Árvores B diferem em estrutura ao permitir mais de dois filhos por nó e são frequentemente usadas para organização eficiente de blocos de dados em disco.
+            </label>
+            <label>
+              <input type="radio" name="pergunta12" value="Árvores B diferem em estrutura ao permitir mais de dois filhos por nó e são frequentemente usadas para organização eficiente de blocos de dados em disco, enquanto as Árvores Binárias de Busca são mais adequadas para estruturas em memória principal." required> Árvores B diferem em estrutura ao permitir mais de dois filhos por nó e são frequentemente usadas para organização eficiente de blocos de dados em disco, enquanto as Árvores Binárias de Busca são mais adequadas para estruturas em memória principal.
+            </label>
+            <label>
+              <input type="radio" name="pergunta12" value="Árvores B diferem em estrutura ao permitir menos de dois filhos por nó e são frequentemente usadas para organização eficiente de blocos de dados em disco, enquanto as Árvores Binárias de Busca são mais adequadas para estruturas em memória principal.">Árvores B diferem em estrutura ao permitir menos de dois filhos por nó e são frequentemente usadas para organização eficiente de blocos de dados em disco, enquanto as Árvores Binárias de Busca são mais adequadas para estruturas em memória principal.
+            </label>
+            <label>
+              <input type="radio" name="pergunta12" value="Árvores B diferem em estrutura ao permitir mais de dois filhos por nó e são frequentemente usadas para organização eficiente de blocos, enquanto as Árvores Binárias de Busca são mais adequadas para estruturas em memória principal.">Árvores B diferem em estrutura ao permitir mais de dois filhos por nó e são frequentemente usadas para organização eficiente de blocos, enquanto as Árvores Binárias de Busca são mais adequadas para estruturas em memória principal.
+            </label>
+          </fieldset>
+
+           <!-- Pergunta 13 -->
+        <fieldset>
+            <legend>13. Qual é o papel da estrutura de Árvore Trie em comparação com as Árvores Binárias de Busca?</legend>
+            <label>
+              <input type="radio" name="pergunta13" value="O papel da estrutura de Árvore Trie é especializado para armazenar conjuntos dinâmicos ou ordenados de chaves.">O papel da estrutura de Árvore Trie é especializado para armazenar conjuntos dinâmicos ou ordenados de chaves.
+            </label>
+            <label>
+              <input type="radio" name="pergunta13" value="O papel da estrutura de Árvore Trie é especializado para armazenar conjuntos dinâmicos ou ordenados de chaves, como strings." > O papel da estrutura de Árvore Trie é especializado para armazenar conjuntos dinâmicos ou ordenados de chaves, como strings.
+            </label>
+            <label>
+              <input type="radio" name="pergunta13" value="O papel da estrutura de Árvore Trie é especializado para armazenar conjuntos dinâmicos.">O papel da estrutura de Árvore Trie é especializado para armazenar conjuntos dinâmicos.
+            </label>
+            <label>
+              <input type="radio" name="pergunta13" value="O papel da estrutura de Árvore Trie é especializado para armazenar conjuntos dinâmicos ou ordenados de chaves, como strings, sendo eficiente na busca de prefixos comuns." required>O papel da estrutura de Árvore Trie é especializado para armazenar conjuntos dinâmicos ou ordenados de chaves, como strings, sendo eficiente na busca de prefixos comuns.
+            </label>
+          </fieldset>
+
+           <!-- Pergunta 14 -->
+        <fieldset>
+            <legend>14. Quais são as vantagens de utilizar uma Árvore AVL em comparação com uma Árvore Binária de Busca convencional?</legend>
+            <label>
+              <input type="radio" name="pergunta14" value="Vantagens incluem a manutenção automática do balanceamento."> Vantagens incluem a manutenção automática do balanceamento.
+            </label>
+            <label>
+              <input type="radio" name="pergunta14" value="Vantagens incluem a manutenção automática do balanceamento, garantindo operações eficientes em termos de tempo para busca, inserção e remoção" required> Vantagens incluem a manutenção automática do balanceamento, garantindo operações eficientes em termos de tempo para busca, inserção e remoção
+            </label>
+            <label>
+              <input type="radio" name="pergunta14" value="Vantagens incluem a manutenção automática do balanceamento, garantindo operações eficientes em termos de tempo para busca.">Vantagens incluem a manutenção automática do balanceamento, garantindo operações eficientes em termos de tempo para busca.
+            </label>
+            <label>
+              <input type="radio" name="pergunta14" value="Vantagens incluem a manutenção automática do balanceamento, garantindo operações eficientes.">Vantagens incluem a manutenção automática do balanceamento, garantindo operações eficientes.
+            </label>
+          </fieldset>
+
+           <!-- Pergunta 15 -->
+        <fieldset>
+            <legend>15. Em que situações uma Árvore Rubro-Negra pode ser preferível em relação a uma Árvore Binária de Busca?</legend>
+            <label>
+              <input type="radio" name="pergunta15" value=" Pode ser preferível em situações que exigem um equilíbrio eficiente, pois a coloração dos nós permite manter um balanceamento aproximado, tornando operações de busca mais rápidas em comparação com uma Árvore Binária de Busca não balanceada."> Pode ser preferível em situações que exigem um equilíbrio eficiente, pois a coloração dos nós permite manter um balanceamento aproximado, tornando operações de busca mais rápidas em comparação com uma Árvore Binária de Busca não balanceada.
+            </label>
+            <label>
+              <input type="radio" name="pergunta15" value="Pode ser preferível em situações que exigem um equilíbrio eficiente, pois a coloração dos nós permite manter um balanceamento aproximado, tornando operações de busca, inserção e remoção mais rápidas em comparação com uma Árvore Binária de Busca não balanceada." required> Pode ser preferível em situações que exigem um equilíbrio eficiente, pois a coloração dos nós permite manter um balanceamento aproximado, tornando operações de busca, inserção e remoção mais rápidas em comparação com uma Árvore Binária de Busca não balanceada.
+            </label>
+            <label>
+              <input type="radio" name="pergunta15" value="Pode ser preferível em situações que exigem um equilíbrio eficiente, pois a coloração dos nós permite manter um balanceamento aproximado, tornando operações de remoção mais rápidas em comparação com uma Árvore Binária de Busca não balanceada.">Pode ser preferível em situações que exigem um equilíbrio eficiente, pois a coloração dos nós permite manter um balanceamento aproximado, tornando operações de remoção mais rápidas em comparação com uma Árvore Binária de Busca não balanceada.
+            </label>
+            <label>
+              <input type="radio" name="pergunta15" value="Pode ser preferível em situações que exigem um equilíbrio eficiente, pois a coloração dos nós permite manter um balanceamento aproximado, tornando operações de inserção mais rápidas em comparação com uma Árvore Binária de Busca não balanceada.">Pode ser preferível em situações que exigem um equilíbrio eficiente, pois a coloração dos nós permite manter um balanceamento aproximado, tornando operações de inserção mais rápidas em comparação com uma Árvore Binária de Busca não balanceada.
+            </label>
+          </fieldset>
       <button type="submit">Enviar </button>
     </form>
   </div>
