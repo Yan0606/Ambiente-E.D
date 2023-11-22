@@ -123,7 +123,8 @@
                         <p class="p-large">Uma árvore AVL é uma árvore binária de busca balanceada.
                             Isso significa que a altura da árvore é sempre O(logn), onde n é o número de elementos na
                             árvore.<br><br>
-                            As árvores AVL são implementadas usando uma técnica chamada balanceamento. O balanceamento é uma
+                            As árvores AVL são implementadas usando uma técnica chamada balanceamento. O balanceamento é
+                            uma
                             operação que é realizada após
                             a inserção ou remoção de um elemento da árvore. O objetivo do balanceamento é manter a
                             altura da árvore O(logn).
@@ -132,164 +133,42 @@
                     </div> <!-- end of text-box -->
 
 
-                    <h2 class="mt-3 mb-4">Exemplo</h2>
-
-                    <p> Crie uma classe, crie o "dado" para armazenar o nó e referencie o nó para o proximo da fila<br>
-                    </p>
+                    <h2 class="mt-5 mb-3">Exemplo de Inserção</h2>
                     <div class="col-lg-9">
-                        <img class="img-fluid" src="images/Fila1.png" alt="alternative">
+                        <img class="img-fluid" src="gifs/avl1.gif" alt="alternative">
+                    </div>
+                    <div class="text-box cmb-5">
+                        <p class="p-large">Note que sempre que um elemento que está sendo adicionado e é maior que o
+                            elemento raiz, ele sempre será redirecionado a direita, e menor para a esquerda (é o padrão
+                            da maioria dos tipos de arvores binárias atualmente), nessa operação note que para inserir o
+                            número “25” ele o coloca como raiz, fazendo com que o “50” vai a direita, pois pensando numa
+                            balança iria ficar dois a esquerda e nada na direita, ficando desbalanceado. </p>
                     </div>
 
-                    <div class="tag_code ">
-                        <p><code>using System;<br>
-                            &nbsp;&nbsp;&nbsp;public class NoFila<br>
-                            &nbsp;&nbsp;&nbsp;{<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public int Dado;  &nbsp;&nbsp;&nbsp;     // O dado armazenado no nó<br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public NoFila Proximo; &nbsp;// Referência para o próximo nó na fila<br>
-                                <br>
-                                &nbsp;&nbsp;&nbsp; public NoFila(int dado)<br>
-                                &nbsp;&nbsp;&nbsp; {<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dado = dado;<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Proximo = null;<br>
-                                    &nbsp;&nbsp;&nbsp; }<br>
-                            }</code></p>
+                    <h2 class="mt-5 mb-3">Exemplo de Remoção</h2>
+                    <div class="col-lg-9">
+                        <img class="img-fluid" src="gifs/avl2.gif" alt="alternative">
+                    </div>
+                    <div class="text-box cmb-5">
+                        <p class="p-large">Veja que a operação e semelhante a inserção, ele busca o elemento a ser
+                            excluído através de comparações de > ou <, mantendo sempre o padrão do maior elemento ir
+                                para direita e o menor para esquerda. </p>
                     </div>
 
-
-                    <p class="mt-3 mb-4">Defina a classe para a fila encadeada.</p>
-                    <div class="tag_code">
-                        <p><code>public class FilaEncadeada<br>
-                            {<br>
-                                &nbsp;&nbsp;&nbsp;  private NoFila primeiro; // O primeiro nó na fila<br>
-                                &nbsp;&nbsp;&nbsp; private NoFila ultimo;   // O último nó na fila<br>
-                                <br>
-                                &nbsp;&nbsp;&nbsp;  // Construtor para criar uma fila vazia<br>
-                                &nbsp;&nbsp;&nbsp; public FilaEncadeada()<br>
-                                &nbsp;&nbsp;&nbsp;  {<br>
-                                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;     primeiro = null;<br>
-                                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;   ultimo = null;<br>
-                                    &nbsp;&nbsp;&nbsp;  }<br>
-                        </code></p>
+                    <h2 class="mt-5 mb-3">Exemplo de Busca</h2>
+                    <div class="col-lg-9">
+                        <img class="img-fluid" src="gifs/avl3.gif" alt="alternative">
                     </div>
-
-
-
-
-
-
-                    <p class=" mt-3 mb-4">Método para adicionar um nó na lista
-                    </p>
-
-
-                    <div class="tag_code">
-                        <p><code>public void Enqueue(int dado)<br>
-                            {<br>
-                                &nbsp;&nbsp;&nbsp;  NoFila novoNo = new NoFila(dado);<br>
-                                <br>
-                                &nbsp;&nbsp;&nbsp;  // Se a fila estiver vazia, o novo nó será o primeiro e o último<br>
-                                &nbsp;&nbsp;&nbsp; if (primeiro == null)<br>
-                                &nbsp;&nbsp;&nbsp; {<br>
-                                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;     primeiro = novoNo;<br>
-                                    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;   ultimo = novoNo;<br>
-                                    &nbsp;&nbsp;&nbsp;  }<br>
-                                    &nbsp;&nbsp;&nbsp; else<br>
-                                    &nbsp;&nbsp;&nbsp;  {<br>
-                                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  // Caso contrário, o novo nó é adicionado ao final da fila<br>
-                                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; ultimo.Proximo = novoNo;<br>
-                                        &nbsp;&nbsp;&nbsp;   }<br>
-                            }<br></code></p>
+                    <div class="text-box cmb-5">
+                        <p class="p-large">Perceba que o elemento desejado a ser buscado irá percorrer normalmente como
+                            a inserção e remoção, porém a comparação feita pela operação de busca é diferente, pois é
+                            verificado se o elemento que ele percorreu é igual a ele, se for igual a busca será
+                            concluída, se for diferente ele irá para o próximo nó
+                        </p>
                     </div>
-
-
-                    <p class="mt-3 mb-4"> Método para remover e retornar o elemento da fila
-                    </p>
-
-                    <div class="tag_code">
-
-                        <p><code>
-                            public int Dequeue()<br>
-                            {<br>
-                                &nbsp;&nbsp;&nbsp;  // Verifique se a fila está vazia<br>
-                                &nbsp;&nbsp;&nbsp;if (primeiro == null)<br>
-                                &nbsp;&nbsp;&nbsp; {<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    throw new InvalidOperationException("A fila está vazia.");<br>
-                                    &nbsp;&nbsp;&nbsp; }<br><br>
-                                    <br>
-                                    &nbsp;&nbsp;&nbsp;  // Obtenha o dado do primeiro nó<br>
-                                    &nbsp;&nbsp;&nbsp; int dadoRemovido = primeiro.Dado;<br>
-                                    <br>
-                                    &nbsp;&nbsp;&nbsp;  // Atualize o primeiro nó para o próximo nó na fila<br>
-                                    &nbsp;&nbsp;&nbsp;primeiro = primeiro.Proximo;<br>
-                                    <br>
-                                    &nbsp;&nbsp;&nbsp; // Se a fila ficou vazia, atualize o último nó também<br>
-                                    &nbsp;&nbsp;&nbsp; if (primeiro == null)<br>
-                                    &nbsp;&nbsp;&nbsp;   {<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   ultimo = null;<br>
-                                        &nbsp;&nbsp;&nbsp; }<br>
-                                        <br>
-                                        &nbsp;&nbsp;&nbsp;   return dadoRemovido;<br>
-                                        &nbsp;&nbsp;&nbsp;  }<br>
-                                         }<br>
-
-
-                            </code></p>
-                    </div>
-
-                    <p class=" mt-4 mb-4">Na Main de seu projeto insira:
-                    </p>
-
-                    <div class="tag_code">
-
-                        <p><code>
-                                    class Program<br>
-                                    {<br>
-                                        &nbsp;&nbsp;&nbsp; static void Main()<br>
-                                        &nbsp;&nbsp;&nbsp; {<br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  FilaEncadeada fila = new FilaEncadeada();<br>
-                                            <br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Adicione elementos à fila<br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fila.Enqueue(1);<br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fila.Enqueue(2);<br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fila.Enqueue(3);<br>
-                                            <br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Remova e imprima os elementos da fila<br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("Elementos da fila:");<br>
-                                            <br>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  while (true)<br>
-                                            &nbsp;&nbsp;&nbsp; {<br>
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  try<br>
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  {<br>
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     int elemento = fila.Dequeue();<br>
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Console.WriteLine(elemento);<br>
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  }<br>
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  catch (InvalidOperationException)<br>
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Console.WriteLine("A fila está vazia.");<br>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  break;<br>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  }<br>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
-                                                        &nbsp;&nbsp;&nbsp; }<br>
-                                    }<br>
-    
-    
-                                </code></p>
-
-                    </div>
-                    <p class=" mt-4 mb-4">Neste exemplo, a classe NoFila representa um
-                        nó na fila com um campo de dado e uma referência para o próximo nó na fila. A classe
-                        FilaEncadeada mantém referências para o primeiro e o último nó na fila e fornece métodos Enqueue
-                        para adicionar elementos à fila e Dequeue para remover elementos da fila seguindo a política
-                        FIFO. O programa principal demonstra como usar a fila encadeada.
-
-
-
-
-
-                    </p>
-                </div>
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
     </div> <!-- end of ex-basic-1 -->
     <!-- end of basic -->
 
