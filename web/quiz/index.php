@@ -222,7 +222,7 @@
               <input type="radio" name="pergunta12" value="Árvores B diferem em estrutura ao permitir menos de dois filhos por nó e são frequentemente usadas para organização eficiente de blocos de dados em disco, enquanto as Árvores Binárias de Busca são mais adequadas para estruturas em memória principal.">Árvores B diferem em estrutura ao permitir menos de dois filhos por nó e são frequentemente usadas para organização eficiente de blocos de dados em disco, enquanto as Árvores Binárias de Busca são mais adequadas para estruturas em memória principal.
             </label>
             <label>
-              <input type="radio" name="pergunta12" value="Árvores B diferem em estrutura ao permitir mais de dois filhos por nó e são frequentemente usadas para organização eficiente de blocos, enquanto as Árvores Binárias de Busca são mais adequadas para estruturas em memória principal.">Árvores B diferem em estrutura ao permitir mais de dois filhos por nó e são frequentemente usadas para organização eficiente de blocos, enquanto as Árvores Binárias de Busca são mais adequadas para estruturas em memória principal.
+              <input type="radio" name="pergunta12" value="Árvores B diferem em estrutura ao permitir mais de dois filhos por nó e são frequentemente usadas para organização eficiente de blocos, enquanto as Árvores Binárias de Busca são mais adequadas para estruturas em memória principal."> Árvores B diferem em estrutura ao permitir mais de dois filhos por nó e são frequentemente usadas para organização eficiente de blocos, enquanto as Árvores Binárias de Busca são mais adequadas para estruturas em memória principal.
             </label>
           </fieldset>
 
